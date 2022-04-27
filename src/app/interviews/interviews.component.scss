@@ -1,0 +1,92 @@
+#interviews{
+    .icon-title{
+        display:flex;
+        align-items:center;
+    }
+    .icon-title .mat-icon{
+        color:#1F47F5;
+    }
+    .add-btn{
+        border: 1px solid #EBEAED;
+        color: #1F47F5;
+        height:auto;
+        background:white;
+    }  
+    .interview-schedule{
+        padding:20px;
+        font-size:14px;
+        .interview-btn{
+            color: white;
+        }  
+        .schedule{
+            background:#FE6730;  
+            border:none;
+        }
+        .round{
+            background:#9C27B0;
+            border:none;
+        }
+        .slots{
+            background:#1F47F5;
+            border:none;
+        }
+        .calendar-icon{
+            color:#1F47F5;
+        }
+        hr{
+            border: 1px solid #F3F3F3;
+        }
+        .avatar{
+            height:20px; 
+            width:20px; 
+            border-radius:50%;
+        }  
+        .light{
+            color: #84818A;
+        }
+        .user-name-icon{
+            color: #25364D;
+            font-size: 12px;
+            background:#FBFAFC;
+            padding: 4px 8px;
+            border-radius: 15px;
+            font-weight: bold;
+            .mat-icon{
+                font-size:14px;
+                height:14px;
+                width:14px;
+            }
+        }
+        .interview-data{
+            margin-top:10px;
+        }
+        .interview-data .mat-icon{
+            color:#B6B4BA;
+        }
+        .check-circle{
+            color:#00A46C!important;
+        }
+        .cancel{
+            color:#FF715A!important;
+        }
+        .help-icon{
+            color:#84818A!important;
+        }
+        .accept{
+            background:#1F47F5;
+            color:white;
+        }
+        .reschedule{
+            color:black;
+            background:#ffffff;
+            border-color:#1F47F5;
+        }
+        .reject{
+            color:#FF715A;
+            border-color:#FBFAFC;
+        }
+        a{
+            color:#1F47F5!important;
+        }
+    }  
+}

@@ -37,6 +37,11 @@ import { AddSkillsComponent } from './add-candidate/add-skills/add-skills.compon
 import { AddCertificateComponent } from './add-candidate/add-certificate/add-certificate.component';
 import { WorkChipsComponent } from './add-candidate/add-personal-details/work-chips/work-chips.component';
 import { SkillChipsComponent } from './add-candidate/add-skills/skill-chips/skill-chips.component';
+import { OffersComponent } from './offers/offers.component';
+import { NoteComponent } from './note/note.component';
+import { ChatComponent } from './chat/chat.component';
+import { InterviewsComponent } from './interviews/interviews.component';
+import { EvaluationComponent } from './evaluation/evaluation.component';
 // import { CustomDatepickerComponent } from './add-candidate/add-education/custom-datepicker/custom-datepicker.component';
 
 @NgModule({
@@ -66,6 +71,11 @@ import { SkillChipsComponent } from './add-candidate/add-skills/skill-chips/skil
     AddCertificateComponent,
     WorkChipsComponent,
     SkillChipsComponent,
+    OffersComponent,
+    NoteComponent,
+    ChatComponent,
+    InterviewsComponent,
+    EvaluationComponent,
     // CustomDatepickerComponent
   ],
   imports: [

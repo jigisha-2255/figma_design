@@ -1,0 +1,68 @@
+.add-doc-file {
+    background: var(--blue);
+    color: white;
+    font-size: 13px;
+    width: 100%;
+}
+
+.add-doc-file:hover {
+    color: var(--white);
+}
+#evaluation{
+    .icon-title{
+        display:flex;
+        align-items:center;
+    }
+    .icon-title .mat-icon{
+        color:#1F47F5;
+    }
+    .add-btn{
+        border: 1px solid #EBEAED;
+        color: #1F47F5;
+        height:auto;
+        background:white;
+    }  
+    .personal_details{
+        padding:20px;
+    }
+    .evaluation-head {
+        background: var(--lightshade);
+        padding: 8px 0px;
+        border-bottom: 1px solid var(--bordergrey);
+    }
+    .table-head,.table-data{
+        padding:12px 0;
+        border-bottom:1px solid #EBEAED;
+    }
+    .star{
+        color:#FFAE1F;
+    }
+    .star-border{
+        color:#FFAE1F;
+    }
+    .dark{
+        color: #504F54;
+        font-weight:bold;
+    }
+    .eye{
+        color:#84818A;
+    }
+    .not-hire{
+        color:#FE6730;
+        font-weight:bold;
+    }
+    .hire{
+        color:#00A46C;
+        font-weight:bold;
+    }
+    .average{
+        color:#84818A;
+        font-weight:bold;
+    }
+}
+::ng-deep{
+    .mat-form-field-appearance-outline .mat-form-field-wrapper {
+        margin:0;
+        padding:0;
+    }
+}

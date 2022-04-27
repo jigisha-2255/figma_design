@@ -1,0 +1,46 @@
+#notes{
+    .icon-title{
+        display:flex;
+        align-items:center;
+    }
+    .icon-title .mat-icon{
+        color:#1F47F5;
+    }
+    .add-btn{
+        border: 1px solid #1F47F5;
+        color: white;
+        height:auto;
+        background:#1F47F5;
+    }
+    .note{
+        padding:50px;
+        h3{
+            color: #25364D;
+        }
+        p{
+            color:#84818A;
+        }
+        .icon-chat{
+            color:#B6B4BA;
+        }
+        .note-time{
+            color: #84818A;
+        }
+    }
+
+}
+
+::ng-deep{
+    .mat-form-field-appearance-outline .mat-form-field-infix {
+        padding: 7px 0;
+        width:100%;
+    }
+    .mat-form-field-appearance-outline .mat-form-field-flex {
+        padding: 0 0.75em 0 0.75em;
+        margin-top: -0.40em!important;
+        position: relative;
+    }
+    .mat-select-placeholder{
+        padding:-5px!important;
+    }
+}

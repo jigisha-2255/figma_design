@@ -1,0 +1,89 @@
+#offers{
+    .personal_details{
+        padding:30px;
+    }
+    .icon-title{
+        display:flex;
+        align-items:center;
+    }
+    .icon-title .mat-icon{
+        color:#1F47F5;
+    }
+    .add-btn{
+        border: 1px solid #1F47F5;
+        color: white;
+        height:auto;
+        background:#1F47F5;
+    }
+    .align-center{
+        display:flex;
+        align-items:center;
+    }
+    .offer-div{
+        background:white;
+        border-radius:4px;
+        padding:20px;
+        box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.03);
+        .offer-left-part{
+            border-right:1px solid grey;
+            a{
+                color:#1F47F5!important;
+            }
+            .avatar{
+                height:20px; 
+                width:20px; 
+                border-radius:50%;
+            }    
+        }
+        .offer-right-part{
+            .accepted{
+                color: var(--green);
+                font-size: 12px;
+                background: rgba(20, 177, 59, 0.1);
+                padding: 4px 8px;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+            .rejected{
+                background: rgba(250, 105, 157, 0.1);
+                color: #FF715A;
+                font-size: 12px;
+                padding: 4px 8px;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+            .pending{
+                color: #FFAE1F;
+                font-size: 12px;
+                background: #FCFCFC;
+                padding: 4px 8px;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+            .notes-icon{
+                height:10px;
+                width:10px;
+                font-size:15px;
+                color:#1F47F5;
+            }
+            .attach-money{
+                font-size:15px;
+                height:8px;
+                width:8px;
+                color:var(--green);
+            }
+            .time{
+                font-size:15px;
+                height:10px;
+                width:10px;
+                color:#FB477E;
+            }
+            .light{
+                color: #84818A;
+            }
+            .note-details{
+                font-size:14px;
+            }
+        }
+    }
+}

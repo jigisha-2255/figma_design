@@ -1,0 +1,179 @@
+<div id="notes">
+    <div class="row container-padding bg-light container-margin">
+        <div class="col-xl-8 col-xxl-9">
+            <div class="row mx-1 my-4">
+                <div class="col-12 personal_details bg-white">
+                    <div class="row">
+                        <div class="col-12 col-md-8 col-lg-10 icon-title">
+                            <mat-icon class="example-tab-icon me-2">notes</mat-icon>
+                            <b>Notes</b>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <form action="">
+                                <mat-form-field appearance="outline" floatLabel="never">
+                                    <textarea matInput rows="7" cols="120"
+                                        placeholder="Add your notes here..."></textarea>
+                                </mat-form-field>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 flex-end">
+                            <div>
+                                <mat-form-field appearance="outline">
+                                    <mat-select placeholder="Everyone">
+                                        <mat-option value="option1">Everyone</mat-option>
+                                        <mat-option value="option2">Personal</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <button mat-stroked-button class="ms-2 me-2 add-btn">Add Note</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row note">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <h3>James Willamson</h3>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button mat-menu-item>
+                                            <mat-icon>dialpad</mat-icon>
+                                            <span>Redial</span>
+                                        </button>
+                                        <button mat-menu-item disabled>
+                                            <mat-icon>voicemail</mat-icon>
+                                            <span>Check voice mail</span>
+                                        </button>
+                                        <button mat-menu-item>
+                                            <mat-icon>notifications_off</mat-icon>
+                                            <span>Disable alerts</span>
+                                        </button>
+                                    </mat-menu>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>
+                                    An absolute great purchase! Small and fits in my hand and it doesn’t get in the way!
+                                    I love that I can buy/download as many PS4 games as my heart desires and it’ll be a
+                                    long while before the space is filled up!Small and fits in my hand and it doesn’t
+                                    get in the way! I love that I can buy/download as many PS4 games as my heart desires
+                                    and it’ll be a long while before the space is filled up!
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <mat-icon class="example-tab-icon my-auto me-2 icon-chat">chat</mat-icon>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="note-time">1 day ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row note">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <h3>Kate Perry</h3>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button mat-menu-item>
+                                            <mat-icon>dialpad</mat-icon>
+                                            <span>Redial</span>
+                                        </button>
+                                        <button mat-menu-item disabled>
+                                            <mat-icon>voicemail</mat-icon>
+                                            <span>Check voice mail</span>
+                                        </button>
+                                        <button mat-menu-item>
+                                            <mat-icon>notifications_off</mat-icon>
+                                            <span>Disable alerts</span>
+                                        </button>
+                                    </mat-menu>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>
+                                    An absolute great purchase! Small and fits in my hand and it doesn’t get in the way!
+                                    I love that I can buy/download as many PS4 games as my heart desires and it’ll be a
+                                    long while before the space is filled up!Small and fits in my hand and it doesn’t
+                                    get in the way! I love that I can buy/download as many PS4 games as my heart desires
+                                    and it’ll be a long while before the space is filled up!
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <mat-icon class="example-tab-icon my-auto me-2 icon-chat">chat</mat-icon>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="note-time">Oct 16, 2020 at 9:12 AM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row note">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <h3>Simon</h3>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                        aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button mat-menu-item>
+                                            <mat-icon>dialpad</mat-icon>
+                                            <span>Redial</span>
+                                        </button>
+                                        <button mat-menu-item disabled>
+                                            <mat-icon>voicemail</mat-icon>
+                                            <span>Check voice mail</span>
+                                        </button>
+                                        <button mat-menu-item>
+                                            <mat-icon>notifications_off</mat-icon>
+                                            <span>Disable alerts</span>
+                                        </button>
+                                    </mat-menu>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p>
+                                    An absolute great purchase! Small and fits in my hand and it doesn’t get in the way!
+                                    I love that I can buy/download as many PS4 games as my heart desires and it’ll be a
+                                    long while before the space is filled up!Small and fits in my hand and it doesn’t
+                                    get in the way! I love that I can buy/download as many PS4 games as my heart desires
+                                    and it’ll be a long while before the space is filled up!
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <mat-icon class="example-tab-icon my-auto me-2 icon-chat">chat</mat-icon>
+                                        <span>5</span>
+                                    </div>
+                                    <div class="note-time">7 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-xxl-3">
+            <app-right-part></app-right-part>
+        </div>
+    </div>
+</div>
