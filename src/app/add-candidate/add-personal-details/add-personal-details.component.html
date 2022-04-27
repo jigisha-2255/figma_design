@@ -1,0 +1,330 @@
+<!-- Personal Details -->
+<div class="row container-margin container-padding mx-1" class="add-personal-details" id="personal-details">
+    <div class="col personal_details bg-white">
+        <div class="row">
+            <div class="col-12 col-lg-8 icon-title d-flex align-items-center">
+                <mat-icon class="example-tab-icon me-2 head">person</mat-icon>
+                <h2 class="my-auto title">Personal Details</h2>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-2">
+                <div class="row">
+                    <img src="../assets/media/avatar.png" alt="avatar" class="avatar">
+                </div>
+                <div class="row">
+                    <i class="fa fa-pencil icon-edit" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <form action="">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <label for="">First Name</label><br />
+                        <div class="row">
+                            <div class="col-4">
+                                <mat-form-field class="select-fname" appearance="outline">
+                                    <mat-select placeholder="Mr">
+                                        <mat-option value="option">Mr</mat-option>
+                                        <mat-option value="option">Mrs</mat-option>
+                                        <mat-option value="option">Miss</mat-option>
+                                    </mat-select>
+                                    <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-8">
+                                <mat-form-field appearance="outline">
+                                    <input matInput placeholder="First Name">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Middle Name</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Middle Name">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Last Name</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Last Name">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="">Email Address</label><br />
+                        <mat-form-field appearance="outline">
+                            <input type="email" matInput placeholder="daniel@gmail.com">
+                            <mat-error></mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Phone</label><br />
+                        <div class="row">
+                            <div class="col-5">
+                                <mat-form-field class="select-fname" appearance="outline">
+                                    <mat-select placeholder="Country">
+                                        <mat-option value="option">
+                                            <img src="../assets/media/india.svg" alt=""
+                                                style="height:30px; width:30px; margin-right:5px;">+91
+                                        </mat-option>
+                                        <mat-option value="option">
+                                            <img src="../assets/media/usa.png" alt=""
+                                                style="height:30px; width:30px; margin-right:5px;">+1
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-7">
+                                <mat-form-field appearance="outline">
+                                    <input type="number" matInput placeholder="Primary Phone No.">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for=""></label><br />
+                        <div class="row">
+                            <div class="col-5">
+                                <mat-form-field class="select-fname" appearance="outline">
+                                    <mat-select placeholder="Country">
+                                        <mat-option value="option">
+                                            <img src="../assets/media/india.svg" alt=""
+                                                style="height:30px; width:30px; margin-right:5px;">+91
+                                        </mat-option>
+                                        <mat-option value="option">
+                                            <img src="../assets/media/usa.png" alt=""
+                                                style="height:30px; width:30px; margin-right:5px;">+1
+                                        </mat-option>
+                                    </mat-select>
+                                    <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
+                                </mat-form-field>
+                            </div>
+                            <div class="col-7">
+                                <mat-form-field appearance="outline">
+                                    <input type="number" matInput placeholder="Secondary Phone No.">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="">Gender</label><br />
+                        <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value="1">Male</mat-radio-button>
+                            <mat-radio-button value="2">Female</mat-radio-button>
+                            <mat-radio-button value="3">Other</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Date of Birth</label>
+                        <!-- <mat-form-field appearance="outline" class="example-form-field">
+                            <input matInput [matDatepicker]="datepicker">
+                            <mat-datepicker-toggle matSuffix [for]="datepicker" placeholder="Date">
+                            </mat-datepicker-toggle>
+                            <mat-datepicker #datepicker>
+                                <mat-datepicker-actions>
+                                    <button mat-button matDatepickerCancel>Cancel</button>
+                                    <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                                </mat-datepicker-actions>
+                            </mat-datepicker>
+                        </mat-form-field> -->
+                        <mat-form-field appearance="outline">
+                            <input matInput type="date" placeholder="date">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Age</label>
+                        <mat-form-field class="select-fname" appearance="outline" floatLabel="never">
+                            <mat-select placeholder="Age">
+                                <mat-option value="option">22</mat-option>
+                                <mat-option value="option">25</mat-option>
+                            </mat-select>
+                            <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="">Address</label>
+                        <mat-form-field appearance="outline" floatLabel="never">
+                            <textarea matInput rows="5" placeholder="Address Here..."></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="">Industry</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Industry">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Functional Area</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Functional Area">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Current Organization</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Current Organization">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="">Current Designation</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Current Designation">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Preferred Location</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Preferred Location">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Current Location</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Current Location">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="">Nationality</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Indian">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Notice Period</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Value">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Relocate</label><br />
+                        <mat-form-field class="select-fname" appearance="outline" floatLabel="never">
+                            <mat-select placeholder="Yes">
+                                <mat-option value="option">Yes</mat-option>
+                                <mat-option value="option">No</mat-option>
+                            </mat-select>
+                            <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="">Maritial Status</label><br />
+                        <mat-form-field class="select-fname" appearance="outline" floatLabel="never">
+                            <mat-select placeholder="Unmarried">
+                                <mat-option value="option">Unmarried</mat-option>
+                                <mat-option value="option">Married</mat-option>
+                            </mat-select>
+                            <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Source</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Source">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Upload Resume</label><br />
+                        <mat-form-field floatLabel="never" appearance="outline">
+                            <!-- <mat-label>word file,dox,pdf</mat-label> -->
+                            <!-- <ngx-mat-file-input placeholder="word file,dox,pdf"></ngx-mat-file-input> -->
+                            <input matInput placeholder="Upload Resume">
+                            <div matSuffix class="upload-file">
+                                <img src="../assets/media/upload-arrow.png" alt="">
+                            </div>
+                            <!-- <mat-icon matSuffix></mat-icon> -->
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <mat-form-field appearance="outline">
+                            <input matInput
+                              placeholder="Details"
+                              name="details"
+                              required />
+                             
+                          </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="">Video Resume</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Paste link to the video resume">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="">Work Autorization</label><br />
+                        <app-work-chips></app-work-chips>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="">PAN Number</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="eg PAN 12345">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Aadhar Number</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="eg 1111 - 2222 - 3333 - 4444">
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="">Passport Number</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="eg PAS 987654 - 45876 ">
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="">LinkedIn</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Paste profile link here">
+                            <mat-icon matSuffix class="attach-link">attachment</mat-icon>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="">Facebook</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Paste profile link here">
+                            <mat-icon matSuffix class="attach-link">attachment</mat-icon>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="">Twitter</label><br />
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Paste profile link here">
+                            <mat-icon matSuffix class="attach-link">attachment</mat-icon>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End Personal Details -->

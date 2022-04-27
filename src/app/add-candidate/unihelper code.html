@@ -1,0 +1,231 @@
+<div class="project-panel" style="height: auto">
+    <div class="project-panel-header d-flex justify-content-between">
+      <h4>Writer Earnings</h4>
+      <div [ngbTooltip]="tooltipMsgAuth" [disableTooltip]="btnAddPayment" tooltipClass="tooltipCustomAuthMsg">
+        <div [ngbTooltip]="tooltipMsgNotAssignedWriter" [disableTooltip]="projectWriters.length > 0"
+          tooltipClass="tooltipCustomAuthMsg">
+          <button type="button" class="btnProject btnProjectAdd" data-toggle="modal" (click)="openPaymentDialog()"
+            [disabled]="!btnAddPayment || projectWriters.length === 0">
+            <i class="fas fa-plus"></i> Add
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="project-panel-body">
+      <perfect-scrollbar fxFlex="auto" [scrollIndicators]="true">
+        <table width="auto" class="project-detail-table mb-0">
+          <colgroup>
+            <col style="min-width:100px;" />
+            <col style="min-width:60px;" />
+            <col style="min-width:130px;" />
+            <col style="min-width:65px;" />
+            <col style="min-width:120px" />
+            <col style="min-width:80px;" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Writer</th>
+              <th>Word Count</th>
+              <th>Earning Type</th>
+              <th>Earning Amount</th>
+              <th>Comment</th>
+              <th class="text-right">Actions</th>
+            </tr>
+          </thead>
+        </table>
+  
+        <!-- <table width="100%" class="project-detail-table mb-0">
+          <colgroup>
+            <col width="20%" />
+            <col width="12%" />
+            <col width="23%" />
+            <col width="10%" />
+            <col width="25%" />
+            <col width="10%" />
+          </colgroup>
+  
+          <tbody>
+            <tr>
+              <ng-template #content>
+                <tr class="colorline" style="border-bottom: solid 2px #ccc">
+                  <td class="collapse-row" style="min-width: 75px">
+                    <a
+                      class="button-transparent"
+                      data-toggle="collapse"
+                      href="#collapse{{ item.writerId }}"
+                      role="button"
+                      aria-expanded="true"
+                      aria-controls="collapse{{ item.writerId }}"
+                    >
+                    </a>
+                    {{ item.writerDisplayName }}
+                  </td>
+                  <td style="min-width: 75px; font-weight: 500">
+                    {{ item.wordCount | number: "1.0-0" }}
+                  </td>
+                  <td style="min-width: 75px"></td>
+                  <td style="min-width: 75px; font-weight: 500">
+                    {{ item.earningAmount | currency: "USD" }}
+                  </td>
+                  <td style="min-width: 75px"></td>
+                  <td style="min-width: 50px" class="text-right"></td>
+                </tr>
+            <tr>
+              <td colspan="6">
+                <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                  <ngb-panel id="static-1">
+                    <ng-template ngbPanelTitle *ngIf="item.isHead">
+                      <span>{{ item.writerDisplayName }}</span>
+                    </ng-template>
+                    <ng-template *ngIf="!item.isHead" ngbPanelContent>
+                      <td style="min-width: 75px; font-weight: 500">
+                        {{ item.wordCount | number: "1.0-0" }}
+                      </td>
+                      <td style="min-width: 75px"></td>
+                      <td style="min-width: 75px; font-weight: 500">
+                        {{ item.earningAmount | currency: "USD" }}
+                      </td>
+                      <td style="min-width: 75px"></td>
+                      <td style="min-width: 50px" class="text-right"></td>
+                    </ng-template>
+                  </ngb-panel>
+                </ngb-accordion>
+              </td>
+            </tr>
+            </ng-template>
+  
+            <ng-template #other_content>
+              <tr class="collapse multi-collapse show" id="collapse{{ item.writerId }}">
+                <td style="min-width: 75px"></td>
+                <td style="min-width: 75px">
+                  {{ item.wordCount | number: "1.0-0" }}
+                </td>
+                <td style="min-width: 75px">{{ item.earningTypeName }}</td>
+                <td style="min-width: 75px">
+                  {{ item.earningAmount | currency: "USD" }}
+                </td>
+                <td style="min-width: 75px">{{ item.comment }}</td>
+                <td style="min-width: 50px" class="text-right">
+                  <button type="button" class="button-transparent" [disabled]="!btnAddPayment"
+                    (click)="openEditEarningDialog(item)" ngbTooltip="Edit" placement="top"
+                    triggers="mouseenter:mouseleave">
+                    <i class="fas fa-pen pr-1 cursor-pointer" style="line-height: inherit">
+                    </i>
+                  </button>
+                  <button type="button" class="button-transparent" [disabled]="!btnAddPayment"
+                    (click)="deleteEarning(item.id)" ngbTooltip="Delete" placement="top" triggers="mouseenter:mouseleave">
+                    <i class="fas fa-trash cursor-pointer" style="line-height: inherit">
+                    </i>
+                  </button>
+                </td>
+              </tr>
+            </ng-template>
+            </tr>
+  
+            <tr *ngIf="!paymentsList?.length">
+              <td colspan="6" class="text-center no-data">
+                No data available yet
+              </td>
+            </tr>
+          </tbody>
+        </table> -->
+  
+        <table width="auto" class="project-detail-table mb-0">
+          <colgroup>
+            <col style="min-width:100px;" />
+            <col style="min-width:60px;" />
+            <col style="min-width:130px;" />
+            <col style="min-width:65px;" />
+            <col style="min-width:120px" />
+            <col style="min-width:80px;" />
+          </colgroup>
+          <tbody>
+            <tr>
+            <ngb-accordion *ngFor="let item of paymentsList; let i = index" [closeOthers]="true" activeIds="static-1">
+              <ngb-panel id="static-1">
+                <ng-template ngbPanelTitle>
+                  <span style="min-width: 83px;" class="ps-1">
+                    {{ item.writerDisplayName }}
+                  </span>
+                  <span style="min-width: 60px; font-weight: 500;">
+                    {{ item.wordCount | number: "1.0-0" }}
+                  </span>
+                  <span style="min-width: 130px;"></span>
+                  <span style="min-width: 65px; font-weight: 500">
+                    {{ item.earningAmount | currency: "USD" }}
+                  </span>
+                  <span style="min-width: 120px;"></span>
+                  <span style="min-width: 60px;" class="text-right"></span>
+                </ng-template>
+                <ng-template ngbPanelContent>
+                  <tr *ngFor="let writerData of item.data" class="collapse multi-collapse show padTop"
+                    id="collapse{{ writerData.writerId }}">
+                    <td style="min-width:100px;"></td>
+                    <td style="min-width: 60px;">
+                      {{ writerData.wordCount | number: "1.0-0" }}
+                    </td>
+                    <td style="min-width: 130px;">
+                      {{ writerData.earningTypeName }}
+                    </td>
+                    <td style="min-width: 65px;">
+                      {{ writerData.earningAmount | currency: "USD" }}
+                    </td>
+                    <td style="min-width: 120px;">
+                      {{ writerData.comment }}
+                    </td>
+                    <td style="min-width: 60px;" class="text-right">
+                      <button type="button" class="button-transparent" [disabled]="!btnAddPayment"
+                        (click)="openEditEarningDialog(writerData)" ngbTooltip="Edit" placement="top"
+                        triggers="mouseenter:mouseleave">
+                        <i class="fas fa-pen pr-1 cursor-pointer" style="line-height: inherit">
+                        </i>
+                      </button>
+                      <button type="button" class="button-transparent" [disabled]="!btnAddPayment"
+                        (click)="deleteEarning(writerData.id)" ngbTooltip="Delete" placement="top"
+                        triggers="mouseenter:mouseleave">
+                        <i class="fas fa-trash cursor-pointer" style="line-height: inherit">
+                        </i>
+                      </button>
+                    </td>
+                  </tr>
+                </ng-template>
+              </ngb-panel>
+            </ngb-accordion>
+          </tr>
+          </tbody>
+        </table>
+  
+        <table width="100%" class="project-detail-table">
+          <tfoot class="payment-footer">
+            <tr>
+              <td class="text-right">
+                <div class="px-3">
+                  <div>Total Word Count :</div>
+                  <span style="color: black">
+                    {{ paymentsWordTotal | number: "1.0-0" }}
+                  </span>
+                </div>
+                <div class="px-3">
+                  <div>Total Amount:</div>
+                  <span style="color: black">
+                    {{ paymentsListTotal | currency: "USD" }}
+                  </span>
+                </div>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </perfect-scrollbar>
+    </div>
+  </div>
+  
+  <ng-template #tooltipMsgAuth>
+    You dont have permission for this action!
+  </ng-template>
+  <ng-template #tooltipMsgNotAssignedWriter>
+    Please assign writer to the project.
+  </ng-template>
+  
+  <ng-template #tooltipMsgPayment>
+    <div [innerHTML]="paymentTooltipMsg">{{ paymentTooltipMsg }}</div>
+  </ng-template>

@@ -1,0 +1,25 @@
+.btn-reject {
+    font-size: 12px;
+    border: 1px solid var(--lightgrey);
+}
+.btn-interview {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: var(--white)!important;
+    background: var(--blue);
+    width: auto;
+}
+
+.btn-interview:hover {
+    color: white;
+}
+
+@media(max-width:912px){
+    .btn-interview {
+        padding: 5px 10px;
+        font-size: 12px;
+        color: var(--white)!important;
+        background: var(--blue);
+        width: auto;
+    }
+}

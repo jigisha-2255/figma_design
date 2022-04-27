@@ -1,0 +1,65 @@
+// .sidenav-container {
+//   height: 100%;
+// }
+
+.sidenav {
+  width: 90px;
+  // min-height:100%;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  background:white;
+  color:black;
+  border-bottom: 1px solid #E3E1E5;
+  position: sticky;
+  // min-height:100%;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-toolbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.help-icon{
+  margin-top:200px;
+}
+
+mat-icon{
+  margin-left:20px;
+}
+
+.hr{
+  margin:10px 10px;
+}
+
+.ellipse1{
+  margin-right:10px;
+}
+.ellipse2{
+  margin-top:27px;
+  margin-left:13px;
+  z-index:1;
+}
+
+.mat-card-avatar{
+  height:50px;
+  width:50px;
+  border-radius:50%;
+}
+
+@media(max-width:700px){
+  .mat-toolbar.mat-primary {
+    background:white;
+    color:black;
+    border-bottom: 1px solid #E3E1E5;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+}

@@ -1,0 +1,67 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar class="mx-auto">
+      <a href="/">
+        <img class="img-responsive" src="../assets/media/ellipse2.jpg" class="ellipse2">
+        <img class="img-responsive" src="../assets/media/ellipse1.jpg" class="ellipse1">
+      </a>
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="/first-page">
+        <img class="img-responsive" src="../assets/media/box.jpg">
+      </a>
+      <a mat-list-item href="/second-page">
+        <img class="img-responsive" src="../assets/media/bag.jpg">
+      </a>
+      <a mat-list-item href="/add-candidate">
+        <img class="img-responsive" src="../assets/media/person.jpg">
+      </a>
+      <hr class="hr">
+      <a mat-list-item href="/third-page">
+        <img class="img-responsive" src="../assets/media/calendar.jpg">
+      </a>
+      <a mat-list-item href="/third-page">
+        <img class="img-responsive" src="../assets/media/box2.jpg">
+      </a>
+      <a mat-list-item href="/third-page">
+        <img class="img-responsive" src="../assets/media/box3.jpg">
+      </a>
+      <a mat-list-item href="/third-page">
+        <img class="img-responsive" src="../assets/media/box4.jpg">
+      </a>
+      <a mat-list-item href="/third-page">
+        <img class="img-responsive" src="../assets/media/box5.jpg">
+      </a>
+      <a mat-list-item href="/third-page">
+        <img class="img-responsive mx-auto help-icon" src="../assets/media/help.jpg">
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <mat-toolbar color="primary">
+      <div>
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+      </div>
+      <div style="display:flex; justify-content: center; align-items: center;">
+        <mat-icon>search</mat-icon>
+        <mat-icon>mail</mat-icon>
+        <mat-icon matBadge="4" matBadgeColor="warn" class="me-4">notifications_none</mat-icon>
+        <button mat-mini-fab aria-label="Example icon button with a plus one icon" style="background:#1F47F5;">
+          MB
+        </button>
+        <button mat-button [matMenuTriggerFor]="menu">
+          Maxbert <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Profile</button>
+          <button mat-menu-item>Logout</button>
+        </mat-menu>
+      </div>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

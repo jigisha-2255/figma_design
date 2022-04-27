@@ -1,0 +1,39 @@
+.mat-chip.mat-standard-chip {
+    background: #FBFAFC;
+    color: #84818A;
+    border:1px solid #EBEAED;
+    font-weight: 400;
+}
+
+.mat-chip.mat-standard-chip .mat-chip-remove {
+    color: #84818A;
+}
+.mat-standard-chip .mat-chip-remove.mat-icon, .mat-standard-chip .mat-chip-remove .mat-icon {
+    width: 2px;
+    height: 16px;
+    font-size: 12px;
+}
+.mat-chip span{
+    width:100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mat-standard-chip .mat-chip-remove, .mat-standard-chip .mat-chip-trailing-icon {
+    margin-left: 0px;
+    margin-right: 0;
+}
+.mat-standard-chip .mat-chip-remove, .mat-standard-chip .mat-chip-trailing-icon {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+::ng-deep .work-chips.mat-form-field-appearance-outline .mat-form-field-outline {
+    display: flex;
+    position: absolute;
+    top: 0.9em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}

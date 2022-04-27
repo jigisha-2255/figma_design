@@ -1,0 +1,128 @@
+.material-icons{
+    font-size:16px;
+}
+.icon-plus {
+    border: 1px solid #E3E1E5;
+    color: #E3E1E5;
+    border-radius: 50%;
+    padding: 3px !important;
+}
+
+.vector-phone {
+    background: #FBFBFB;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 1px 12px;
+    border: 1px solid #E3E3E3;
+    color: var(--darkgrey);
+}
+
+.icon-cross {
+    /* border:1px solid var(--darkgrey); */
+    color: var(--darkgrey);
+    font-size: 15px !important;
+    /* border-radius:50%;
+    padding:4px!important; */
+}
+
+.vector-number {
+    background: #FBFBFB;
+    border: 1px solid #E3E3E3;
+    color: var(--darkgrey);
+    font-size: 13px !important;
+    border-radius: 20px;
+    padding: 1px 4px !important;
+}
+
+.icon-edit {
+    background: #FFAE1F;
+    color: white;
+    padding: 7px 9px;
+    border-radius: 50%;
+    margin-bottom: -40px;
+    margin-left: 58%;
+    z-index: 1;
+    border: 3px solid white;
+    width: auto;
+}
+
+.avatar {
+    height: 140px;
+    width: auto;
+}
+
+.profile_match {
+    background: #00A46C;
+    color: white;
+    margin-top: -24px;
+    padding: 7px;
+    font-size: 10px !important;
+    width: auto;
+}
+// MEDIA QUERIES
+:host ::ng-deep {
+@media(max-width:280px){
+    .icon-edit {
+        background: #FFAE1F;
+        color: white;
+        font-size:9px;
+        border-radius: 50%;
+        margin-bottom:-15px;
+        margin-left: 55%;
+        padding:0px;
+        z-index: 0;
+        height:15px;
+        width:15px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+    }
+    
+    .avatar {
+        height: 50px;
+        width: auto;
+    }
+   
+    .profile_match {
+        background: #00A46C;
+        color: white;
+        margin-top: -10px;
+        padding:2px 2px;
+        font-size: 6px !important;
+        width: auto;
+    }  
+}
+@media(min-width:281px) and (max-width:576px){
+    .icon-edit {
+        background: #FFAE1F;
+        color: white;
+        font-size:9px;
+        border-radius: 50%;
+        margin-bottom:-20px;
+        margin-left: 60%;
+        padding:0px;
+        z-index: 0;
+        height:20px;
+        width:20px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+    }
+    
+    .avatar {
+        height: 70px;
+        width: auto;
+    }
+    
+    .profile_match {
+        background: #00A46C;
+        color: white;
+        margin-top: -14px;
+        padding:3px 5px;
+        font-size: 7px !important;
+        width: auto;
+    } 
+    }
+}

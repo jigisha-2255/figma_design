@@ -1,0 +1,2115 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root {
+    --darkgrey: #5F5F5F;
+    --lightgrey: #504F54;
+    --shadegrey: #84818A;
+    --red: #FF715A;
+    --white: #f5f5f5;
+    --dark: #25364D;
+    --light: #B6B4BA;
+    --blue: #1F47F5;
+    --bordergrey: #EBEAED;
+    --yellow: #fcac1c;
+    --lightblue: #4AC7D3;
+    --lightbluish: #09CEE5;
+    --green: #00A46C;
+    --shadeblue: #2d6aba;
+    --lightshade: #FBFAFC;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    margin:0;
+}
+
+::ng-deep .mat-tab-body-content {
+    height: 100%;
+    overflow: hidden !important;
+}
+
+.navbar-toggler {
+    border-color: none !important;
+}
+
+.navbar-toggler-icon i.fa-bars {
+    color: var(--dark);
+    font-size: 28px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row div {
+    margin: 2px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: end;
+}
+
+/* .person_details p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+} */
+a,
+a:hover,
+a:focus {
+    color: inherit!important;
+    text-decoration: none!important;
+    transition: all 0.3s;
+}
+
+.responsive-layout {
+    text-align: left;
+}
+
+.navbar {
+    /* padding: 15px 10px; */
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    /* margin-bottom: 40px; */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.tab-pane .container-margin {
+    margin-left: -20px !important;
+    ;
+    margin-right: -20px !important;
+    ;
+}
+
+.container-padding {
+    padding: 8px 12px;
+}
+
+.container-padding-x {
+    padding: 0 12px;
+}
+
+.dropdown-toggle::after {
+    /* right:0px!important; */
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 70px;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    /* height: 100vh; */
+    min-height: 200vh;
+    /* z-index: 999; */
+    background: #fff;
+    transition: all 0.3s;
+    z-index: 0;
+    border-right: 1px solid var(--bordergrey);
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 10px 20px;
+    background: white;
+    z-index: -1;
+}
+
+#sidebar .ellipse1 {
+    z-index: 0;
+    margin-left: 10px;
+}
+
+#sidebar .ellipse2 {
+    margin-top: -20px;
+    z-index: 1;
+}
+
+#sidebar ul.components {
+    /* padding: 10px 0; */
+    /* border-bottom: 1px solid #47748b; */
+}
+
+.help {
+    margin-left: 10px;
+    margin-top: 300px;
+}
+
+#sidebar .hr_sidebar {
+    width: 50%;
+    border-top: 3px solid #E3E1E5;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 5px 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,#sidebar ul li a[aria-expanded="true"] {
+    color: #fff;
+    /* background: #6d7fcc; */
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-bs-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: calc(100% - 70px);
+    min-height: 100vh;
+    transition: all 0.3s;
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+}
+
+.container-fluid {
+    overflow-x: hidden;
+}
+
+.content-top {
+    padding: 0px 20px 0px 20px;
+    margin: 10px 0;
+}
+
+.content-bottom {
+    padding: 30px;
+}
+
+#content.active {
+    width: 100%;
+}
+
+#content .btn-info {
+    background: white;
+    border: 1px solid #E3E1E5;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: -15px;
+    /* z-index:100!important; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.user-profile-nav {
+    visibility: hidden;
+}
+
+.user-profile-nav i.fa {
+    color: var(--light);
+}
+
+.user-profile-nav .rounded-circle-img {
+    background: var(--blue);
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.user-profile-nav .user-name {
+    font-weight: 600px;
+    color: var(--dark);
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.user-profile-nav a.dropdown-toggle {
+    color: var(--dark);
+}
+
+.breadcrumb {
+    background: none;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: var(--shadegrey);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    content: ">";
+}
+
+.breadcrumb-item.active {
+    color: var(--dark);
+}
+
+
+/* .carousel-control-prev{
+    margin-left:-40px;
+} */
+/* .icon-chevron-left{
+    margin-left:-110px;
+    color:var(--lightgrey);
+}
+.icon-chevron-right{
+    margin-right:-110px;
+    color:var(--lightgrey);
+} */
+.icon-whatsapp {
+    color: #fff;
+    background: linear-gradient(#25d366, #25d366) 14% 84%/16% 16% no-repeat, radial-gradient(#25d366 58%, transparent 0)!important;
+    font-size: 20px !important;
+}
+
+.icon-linkedin {
+    color: #0e76a8;
+    font-size: 20px !important;
+}
+
+.icon-social {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-social span {
+    background: #FDFCFF;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.rating {
+    color: var(--blue);
+}
+
+.rate {
+    font-size: 15px;
+    color: var(--lightgrey);
+}
+
+.map-marker {
+    color: #00A46C;
+    font-size: 12px;
+
+}
+
+.envelope {
+    color: #378DF7;
+    font-size: 12px;
+}
+
+.phone {
+    color: #FFB526;
+    font-size: 12px;
+}
+
+.user_data p {
+    font-size: 12.5px;
+    margin-bottom: 0 !important;
+}
+.bg-red{
+    background-color:var(--red);
+}
+.user_data span.dark-color {
+    color: black;
+    font-size: 12.5px;
+    margin-bottom: 0px;
+}
+.user_data span.light-color {
+    color: var(--light);
+    font-size: 12.5px;
+    margin-bottom: 0px;
+}
+.candidate-head{
+    color:var(--dark);
+    font-size:14px!important;
+}
+
+.dark-color {
+    color: black !important;
+}
+.light-color{
+    color:var(--light);
+}
+
+.icon-plus {
+    border: 1px solid #E3E1E5;
+    color: #E3E1E5;
+    font-size: 10px !important;
+    border-radius: 50%;
+    padding: 4px !important;
+}
+
+.vector-phone {
+    background: #FBFBFB;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 1px 12px;
+    border: 1px solid #E3E3E3;
+    color: var(--darkgrey);
+}
+
+.icon-cross {
+    /* border:1px solid var(--darkgrey); */
+    color: var(--darkgrey);
+    font-size: 15px !important;
+    /* border-radius:50%;
+    padding:4px!important; */
+}
+
+.vector-number {
+    background: #FBFBFB;
+    border: 1px solid #E3E3E3;
+    color: var(--darkgrey);
+    font-size: 13px !important;
+    border-radius: 20px;
+    padding: 1px 4px !important;
+}
+
+.user_nav {
+    font-size: 13px;
+    color: var(--dark);
+}
+
+.user_nav span.badge {
+    background: var(--red);
+    color: var(--white);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.user_nav .fa {
+    color: var(--light);
+}
+
+.user_nav a {
+    padding: auto;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs button:focus {
+    border: 1px solid blue;
+    background: none;
+    /* outline:none; */
+    /* color: #00adee; */
+}
+
+.nav.nav-tabs button.nav-link:hover {
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+/* .user_nav a.active {
+    border-bottom: 3px solid blue!important;
+    color: black;
+    font-weight: bold;
+} */
+.nav-tabs button {
+    background: none;
+    /* border:none; */
+}
+
+.nav-tabs .nav-link {
+    color: var(--dark);
+}
+
+.nav-tabs button.nav-link.active {
+    color: black;
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--blue);
+}
+
+.nav-tabs .nav-link.active>i {
+    color: var(--blue);
+}
+
+/* ---------------------------------------------------
+    Personal Details
+----------------------------------------------------- */
+.personal_details {
+    padding: 30px 25px;
+    border-radius: 4px;
+}
+
+.personal_details input[type="text"], .personal_details input[type="email"], .personal_details input[type="number"], .personal_details textarea {
+    border: none;
+    width: 100%;
+}
+
+.personal_details input:disabled, .personal_details textarea:disabled {
+    background: white;
+}
+
+.personal_details {
+    font-size: 13px;
+}
+
+.personal_details textarea {
+    height: auto !important;
+}
+
+.personal_details label {
+    color: var(--lightgrey) !important;
+}
+
+.personal_details .content {
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.personal_details input {
+    color: var(--dark) !important;
+    font-weight: bold;
+}
+
+.personal_details textarea {
+    color: var(--dark) !important;
+    font-weight: bold;
+    overflow-y: hidden;
+}
+
+.personal_details span.link {
+    color: var(--blue);
+}
+
+.vector-tag {
+    background: #FBFBFB;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 5px 8px;
+    border: 1px solid #E3E3E3;
+    color: var(--darkgrey);
+}
+
+.personal_details .edit_user {
+    border: 1px solid var(--bordergrey);
+    background: white;
+    color: var(--dark);
+    border-radius: 2px;
+    padding: 4px 14px;
+}
+
+.personal_details .social_icon {
+    background: var(--blue);
+    border-radius: 50%;
+    color: var(--white);
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.personal_details .icon-title .fa {
+    color: var(--blue);
+    font-size: 20px;
+}
+
+.personal_details .icon-title b {
+    font-size: 20px;
+}
+
+.personal_details .icon-calendar {
+    color: var(--yellow);
+}
+
+.personal_details .link-color{
+    color:var(--blue);
+}
+.personal_details .add_user {
+    border: 1px solid var(--bordergrey);
+    background: white;
+    color: var(--blue);
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 6px 18px;
+}
+
+/* ---------------------------------------------------
+    Personal Details - Education, Projects
+----------------------------------------------------- */
+.personal_details .content h6 {
+    color: var(--dark);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.personal_details .content_education {
+    font-size: 14px;
+}
+
+.personal_details .icon-pencil {
+    color: var(--lightblue);
+    font-size: 17px;
+}
+
+.personal_details .icon-trash {
+    color: var(--red);
+    font-size: 17px;
+}
+
+/* ---------------------------------------------------
+    Personal Details - Work Authrization
+----------------------------------------------------- */
+.content_authrization .vector {
+    background: #FBFBFB;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 5px 8px;
+    border: 1px solid #E3E3E3;
+    color: var(--darkgrey);
+}
+
+/* ---------------------------------------------------
+    Personal Details - Right Part
+----------------------------------------------------- */
+.title-border {
+    border-left: 3px solid var(--yellow);
+}
+
+.icon-ellipsis {
+    color: var(--light);
+}
+
+.map-location {
+    color: var(--lightgrey);
+}
+
+.calendar-icon {
+    color: var(--lightgrey);
+}
+
+.icon-remote {
+    font-size: 7px !important;
+    color: var(--green);
+}
+
+.interview-mode {
+    color: var(--green);
+    font-size: 12px;
+    background: rgba(20, 177, 59, 0.1);
+    padding: 4px 8px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+
+
+/* .dropdown-interview{
+    background:var(--blue);
+    color:var(--white)!important;
+    border-radius:5px;
+    width:100%;
+} */
+
+.personal_details small {
+    color: var(--shadegrey);
+    font-size: 12px;
+}
+
+/* ---------------------------------------------------
+    Similar Candidates
+----------------------------------------------------- */
+.similar_candidates {
+    padding: 20px 15px 20px 20px !important;
+}
+
+.similar_candidates h6 {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.similar_candidates span {
+    font-size: 12px;
+    color:var(--dark);
+}
+
+.similar_candidates .fa-star {
+    color: var(--blue);
+}
+
+.similar_candidates .avatar {
+    width: 100%;
+    height: 100%;
+}
+
+.similar_candidates .candidate_match {
+    background: #00A46C;
+    color: white;
+    position: relative;
+    margin-top: -5px;
+    padding: 1px 2px;
+    letter-spacing: 0px;
+    font-size: 7.5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.similar_candidates .actively-looking {
+    color: var(--green);
+    font-size: 10px;
+    background: rgba(20, 177, 59, 0.1);
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.candidate_scroll {
+    height: 520px;
+    overflow-y: scroll;
+}
+
+/* .candidate_scroll::-webkit-scrollbar-track {
+    border: none;
+    padding: 2px 0;
+    background-color: var(--white);
+  }
+  
+.candidate_scroll::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.candidate_scroll::-webkit-scrollbar-thumb {
+    height: 20px!important;
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: white;
+    border: 1px solid lightgrey;
+}
+.candidate_scroll::-webkit-scrollbar-button {
+    height: 12px;
+  } */
+.candidate_scroll::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 10px;
+}
+
+.candidate_scroll::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    height: 10px;
+    background-color: lightgrey;
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+.candidate_scroll::-webkit-scrollbar-button {
+    height: 500px;
+}
+
+/* ---------------------------------------------------
+    Recent activity
+----------------------------------------------------- */
+/*Active/ Completed States*/
+/*Vertical Steps*/
+.list-group.vertical-steps {
+    padding-left: 10px;
+}
+
+.list-group.vertical-steps .list-group-item {
+    border: none;
+    border-left: 1px dashed var(--light);
+    box-sizing: border-box;
+    border-radius: 0;
+    /* counter-increment: step-counter; */
+    content: "\A";
+    padding-left: 30px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-top: 0px;
+    background: none;
+}
+
+.list-group.vertical-steps .list-group-item.active {
+    background-color: transparent;
+    color: inherit;
+}
+
+.list-group.vertical-steps .list-group-item:last-child {
+    border-left: 1px dashed transparent;
+    padding-bottom: 0;
+}
+
+.list-group.vertical-steps .list-group-item::before {
+    border-radius: 50%;
+    background-color: #ece5dd;
+    color: #555;
+    /* content: counter(step-counter); */
+    content: "\A";
+    display: inline-block;
+    float: left;
+    height: 10px;
+    line-height: 25px;
+    margin-left: -35px;
+    text-align: center;
+    width: 10px;
+}
+
+.list-group.vertical-steps .list-group-item span,
+.list-group.vertical-steps .list-group-item a {
+    display: block;
+    overflow: hidden;
+    margin-top: -15px;
+    /* padding-bottom:20px; */
+    /* padding-top:10px; */
+}
+
+/*Active/ Completed States*/
+.list-group.vertical-steps .list-group-item.active::before {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.list-group.vertical-steps .list-group-item.completed {
+    /* border-left:3px solid var(--blue); */
+}
+
+.list-group.vertical-steps .list-group-item.completed::before {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.list-group.vertical-steps .list-group-item.completed:last-child {
+    /* border-left:1px dashed var(--light); */
+}
+
+/* ---------------------------------------------------
+    Accordion - Other Applications
+----------------------------------------------------- */
+.accordion-started.accordion-part {
+    min-height: 0;
+    /* min-width: 220px; */
+    width: 100%;
+    background-color: #FFF;
+    margin: 0px !important;
+    color: #484848;
+}
+
+.accordion-started.accordion-part img {
+    width: 100%;
+    height: 100%;
+}
+
+.accordion-started.accordion-part .ac-label {
+    /* padding: 5px 20px; */
+    position: relative;
+    display: block;
+    height: auto;
+    cursor: pointer;
+    color: var(--dark);
+    /* border: 1px solid #95e5d4; */
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    line-height: 33px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.accordion-started.accordion-part .ac-label:hover {}
+
+.accordion-started.accordion-part input+.ac-label {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-started.accordion-part input:checked+.ac-label,
+.accordion-started.accordion-part input:checked+.ac-label:active {}
+
+.accordion-started.accordion-part input.ac-input {
+    display: none;
+}
+
+.accordion-started.accordion-part .article {
+    overflow: hidden;
+    height: 0px;
+    max-height: auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion-started.accordion-part .article p {
+    line-height: 23px;
+    /* padding-left: 5px; */
+}
+
+.accordion-started.accordion-part input:checked~.article .arrow {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.accordion-started.accordion-part input:checked~.article.ac-content {
+    height: auto;
+}
+
+.accordion-started.accordion-part .arrow {
+    position: absolute;
+    transform: translate(-30px, 0);
+    margin-top: 16px;
+    right: 0;
+}
+
+.accordion-started.accordion-part input:checked~.ac-label .arrow:before {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+.accordion-started.accordion-part input:checked~.ac-label .arrow:after {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+.accordion-started.accordion-part .arrow:before, .accordion-part .arrow:after {
+    content: "";
+    position: absolute;
+    background-color: var(--shadegrey);
+    width: 3px;
+    height: 9px;
+}
+
+.accordion-started.accordion-part .arrow:before {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.accordion-started.accordion-part .arrow:after {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+.accordion-started ul.ac-list {
+    padding-left: 40px;
+    list-style-type: disc;
+}
+
+.accordion-started .fa-user {
+    color: var(--blue);
+}
+
+.accordion-started .progress {
+    height: 0.5rem;
+}
+
+.accordion-started .progress-bar {
+    background: var(--yellow);
+}
+
+.accordion-started h6 {
+    font-size: 15px;
+}
+
+/* ---------- accordion style end --------------------------------------- */
+
+/* ---------------------------------------------------
+    CANDIDATE RESUME PAGE
+---------------------------------------------------- */
+.icon-pdf i {
+    color: var(--light);
+    font-size: 20px;
+}
+
+.hr {
+    color: var(--bordergrey);
+}
+
+.resume-left {
+    height: 1200px;
+    width: 100%;
+}
+
+.resume-right {
+    height: 400px;
+}
+
+.resume-page {
+    height: 1180px;
+    overflow-y: scroll;
+}
+
+.resume-page .active {
+    border: 2px solid var(--blue);
+}
+
+.resume-page::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    height: 10px;
+}
+
+.resume-page::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    height: 10px;
+    background-color: lightgrey;
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+.resume-page::-webkit-scrollbar-button {
+    height: 600px;
+}
+
+.add-files {
+    color: var(--blue);
+}
+
+.icon-eye {
+    color: var(--lightgrey);
+    font-size: 17px !important;
+}
+
+.icon-cloud {
+    color: var(--green);
+    font-size: 17px !important;
+}
+
+.icon-share {
+    color: var(--blue);
+    font-size: 17px !important;
+}
+
+.add-file {
+    color: var(--blue);
+    border: 1px dashed var(--blue);
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.upload-file .avatar {
+    height: 28px;
+    width: 28px;
+}
+
+.upload-file .pdf-img {
+    height: 50px;
+    width: 50px;
+}
+
+.upload-file .gallery-img {
+    height: 50px;
+    width: 50px;
+}
+
+/* ---------------------------------------------------
+    CANDIDATE DOCUMENTS PAGE
+---------------------------------------------------- */
+/* Candidate Documents Page */
+.document-head {
+    background: var(--lightshade);
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--bordergrey);
+}
+
+.document-content {
+    border-bottom: 1px solid var(--bordergrey);
+    padding: 10px 0;
+}
+
+.select-sort .form-select {
+    color: black !important;
+    font-size: 13px;
+    padding: 0.375rem;
+}
+
+
+.document-bottom {
+    padding-bottom: 240px;
+}
+/* .hover_drop_down:hover div.dropdown-menu{
+   display: block;
+} */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.btn-sidebar:hover .offcanvas{
+    display:block;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+---------------------------------------------------- */
+/* Extra small */
+@media(max-width:280px){
+     
+    .personal_details {
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    .personal_details .icon-title b {
+        font-size: 10px;
+    }
+
+    .personal_details .icon-title .fa {
+        color: var(--blue);
+        font-size: 15px;
+    }
+
+    .personal_details .add_user {
+        border: none;
+        background: white;
+        color: var(--blue);
+        font-weight: bold;
+        border-radius: 2px;
+        padding: 6px 8px;
+        font-size: 10px!important;
+    }
+
+    .personal_details .edit_user {
+        border: 1px solid var(--bordergrey);
+        background: white;
+        border-radius: 2px;
+        padding: 4px 6px;
+        font-size: 10px;
+    }
+
+    .vector-tag {
+        background: #FBFBFB;
+        font-size: 10px;
+        border-radius: 20px;
+        padding: 5px 8px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        width: 100%;
+    }
+
+    .content_authrization .vector {
+        background: #FBFBFB;
+        font-size: 10px;
+        border-radius: 20px;
+        padding: 5px 8px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        width: 100%;
+    }
+
+    .similar_candidates .avatar {
+        height: 60px;
+        width: 100%;
+    }
+
+    .similar_candidates .candidate_match {
+        background: #00A46C;
+        color: white;
+        position: relative;
+        margin-top: -20px;
+        padding: 2px 4px;
+        letter-spacing: 0px;
+        font-size: 8px;
+        border-radius: 10px;
+    }
+    /* Candidate Resume Page */
+    .upload-file .pdf-img {
+        height: 28px;
+        width: 28px;
+    }
+
+    .upload-file .gallery-img {
+        height: 28px;
+        width: 28px;
+    }
+    .user_nav div {
+        margin-top: 10px;
+    }
+
+    .personal_details input[type="text"], .personal_details input[type="email"], .personal_details input[type="number"], .personal_details textarea {
+        border: none;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .personal_details .icon-title b {
+        font-size: 15px;
+    }
+
+    .personal_details .content h6 {
+        color: var(--dark);
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .vector-tag {
+        background: #FBFBFB;
+        font-size: 13px;
+        border-radius: 20px;
+        padding: 5px 7px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        margin-top: 10px;
+        width: 60%;
+    }
+
+    .content_authrization .vector {
+        background: #FBFBFB;
+        font-size: 13px;
+        border-radius: 20px;
+        padding: 5px 6px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        margin-top: 10px;
+        width: 60%;
+    }
+
+    /* .dropdown-interview{
+        background:var(--blue);
+        color:var(--white);
+        border-radius:5px;
+        width:50%;
+    } */
+    /* #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    } */
+    /* #content {
+        width: 100%;
+    } */
+    /* #content.active {
+        width: calc(100% - 70px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    } */
+    /* Candidate Resume Page */
+    .resume-right {
+        height: auto;
+    }
+
+    .resume-page {
+        height: 600px;
+    }
+
+    .resume-left {
+        height: auto;
+        width: 100%;
+    }
+
+    /* Candidate Document Page */
+    .add-doc-file {
+        background: var(--blue);
+        color: white;
+        font-size: 13px;
+        width: auto;
+    }
+}
+@media(min-width:281px) and (max-width:576px) {
+       
+    .similar_candidates .avatar {
+        height: auto;
+        width: 100%;
+    }
+
+    .similar_candidates .candidate_match {
+        background: #00A46C;
+        color: white;
+        position: relative;
+        margin-top: -12px;
+        padding: 1px 4px;
+        letter-spacing: 1px;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+     /* Candidate Resume Page */
+     .upload-file .pdf-img {
+        height: 28px;
+        width: 28px;
+    }
+
+    .upload-file .gallery-img {
+        height: 28px;
+        width: 28px;
+    }
+    .user_nav div {
+        margin-top: 10px;
+    }
+
+    .personal_details input[type="text"], .personal_details input[type="email"], .personal_details input[type="number"], .personal_details textarea {
+        border: none;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .personal_details .icon-title b {
+        font-size: 15px;
+    }
+
+    .personal_details .content h6 {
+        color: var(--dark);
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .vector-tag {
+        background: #FBFBFB;
+        font-size: 13px;
+        border-radius: 20px;
+        padding: 5px 7px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        margin-top: 10px;
+        width: 60%;
+    }
+
+    .content_authrization .vector {
+        background: #FBFBFB;
+        font-size: 13px;
+        border-radius: 20px;
+        padding: 5px 6px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        margin-top: 10px;
+        width: 60%;
+    }
+
+    /* .dropdown-interview{
+        background:var(--blue);
+        color:var(--white);
+        border-radius:5px;
+        width:50%;
+    } */
+    /* #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    } */
+    /* #content {
+        width: 100%;
+    } */
+    /* #content.active {
+        width: calc(100% - 70px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    } */
+    /* Candidate Resume Page */
+    .resume-right {
+        height: auto;
+    }
+
+    .resume-page {
+        height: 600px;
+    }
+
+    .resume-left {
+        height: auto;
+        width: 100%;
+    }
+
+    /* Candidate Document Page */
+    .add-doc-file {
+        background: var(--blue);
+        color: white;
+        font-size: 13px;
+        width: auto;
+    }
+}
+
+/* small */
+@media(min-width:576px) and (max-width:768px) {
+    .icon-edit {
+        background: #FFAE1F;
+        color: white;
+        padding: 7px 9px;
+        border-radius: 50%;
+        margin-bottom: -30px;
+        margin-left: 58%;
+        z-index: 1;
+        border: 3px solid white;
+        width: auto;
+    }
+    
+    .avatar {
+        height: 120px;
+        width: auto;
+    }
+    
+    .profile_match {
+        background: #00A46C;
+        color: white;
+        margin-top: -24px;
+        padding: 7px;
+        font-size: 12px !important;
+        width: auto;
+    }  
+    .similar_candidates .avatar {
+        height:90px;
+        width:90px;
+    }
+
+    .similar_candidates .candidate_match {
+        background: #00A46C;
+        color: white;
+        position: relative;
+        margin-top: -20px;
+        padding: 3px 4px;
+        letter-spacing: 1px;
+        font-size: 13px;
+        border-radius: 10px;
+        width:60%;
+    }  
+     /* Candidate Resume Page */
+     .upload-file .pdf-img {
+        height: 28px;
+        width: 28px;
+    }
+
+    .upload-file .gallery-img {
+        height: 28px;
+        width: 28px;
+    }
+    .user_nav div {
+        margin-top: 10px;
+    }
+
+    .personal_details input[type="text"], .personal_details input[type="email"], .personal_details input[type="number"], .personal_details textarea {
+        border: none;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .personal_details .icon-title b {
+        font-size: 15px;
+    }
+
+    .personal_details .content h6 {
+        color: var(--dark);
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .vector-tag {
+        background: #FBFBFB;
+        font-size: 13px;
+        border-radius: 20px;
+        padding: 5px 7px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        margin-top: 10px;
+        width: 60%;
+    }
+
+    .content_authrization .vector {
+        background: #FBFBFB;
+        font-size: 13px;
+        border-radius: 20px;
+        padding: 5px 6px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        margin-top: 10px;
+        width: 60%;
+    }
+
+    /* .dropdown-interview{
+        background:var(--blue);
+        color:var(--white);
+        border-radius:5px;
+        width:50%;
+    } */
+    /* #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    } */
+    /* #content {
+        width: 100%;
+    } */
+    /* #content.active {
+        width: calc(100% - 70px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    } */
+    /* Candidate Resume Page */
+    .resume-right {
+        height: auto;
+    }
+
+    .resume-page {
+        height: 600px;
+    }
+
+    .resume-left {
+        height: auto;
+        width: 100%;
+    }
+
+    /* Candidate Document Page */
+    .add-doc-file {
+        background: var(--blue);
+        color: white;
+        font-size: 13px;
+        width: auto;
+    } 
+}
+
+/* Medium */
+@media(min-width:768px) and (max-width:992px) {
+    .responsive-layout {
+        text-align: center;
+        margin-top: 10px !important;
+    }
+    .icon-edit {
+        background: #FFAE1F;
+        color: white;
+        padding: 7px 9px;
+        border-radius: 50%;
+        margin-bottom: -30px;
+        margin-left: 58%;
+        z-index: 1;
+        border: 3px solid white;
+        width: auto;
+    }
+    
+    .avatar {
+        height: 120px;
+        width: auto;
+    }
+    
+    .profile_match {
+        background: #00A46C;
+        color: white;
+        margin-top: -24px;
+        padding: 7px;
+        font-size: 12px !important;
+        width: auto;
+    }   
+    .similar_candidates .avatar {
+        height:90px;
+        width:90px;
+    }
+
+    .similar_candidates .candidate_match {
+        background: #00A46C;
+        color: white;
+        position: relative;
+        margin-top: -20px;
+        padding: 3px 4px;
+        letter-spacing: 1px;
+        font-size: 13px;
+        border-radius: 10px;
+        width:60%;
+    } 
+    .resume-left {
+        height: 740px;
+        width: 100%;
+    }
+    
+    .resume-right {
+        height: 230px;
+    }
+    
+    .resume-page {
+        height: 720px;
+        overflow-y: scroll;
+    }
+}
+@media(min-width:769px) and (max-width:1024px) {
+
+    .content_authrization .vector {
+        background: #FBFBFB;
+        font-size: 10px;
+        border-radius: 20px;
+        padding: 5px 7px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        width: 40%;
+    }
+
+    .vector-tag {
+        background: #FBFBFB;
+        font-size: 13px;
+        border-radius: 20px;
+        padding: 5px 7px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        width: 40%;
+    }
+
+    /* Candidate Resume Page */
+    .upload-file .pdf-img {
+        height: 28px;
+        width: 28px;
+    }
+
+    .upload-file .gallery-img {
+        height: 28px;
+        width: 28px;
+    }
+ 
+}
+/* Large */
+@media(min-width:992px) and (max-width:1280px) {
+    .similar_candidates .avatar {
+        width: 100%;
+        height: 100%;
+    }
+
+    .similar_candidates .candidate_match {
+        background: #00A46C;
+        color: white;
+        position: relative;
+        margin-top: -16px;
+        padding: 1px 2px;
+        letter-spacing: 0px;
+        font-size: 12px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:70%;
+    }
+
+    .content_authrization .vector {
+        background: #FBFBFB;
+        font-size: 13px;
+        border-radius: 20px;
+        padding: 5px 6px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+    }
+    .icon-edit {
+        background: #FFAE1F;
+        color: white;
+        padding: 7px 9px;
+        border-radius: 50%;
+        margin-bottom: -40px;
+        margin-left: 58%;
+        z-index: 1;
+        border: 3px solid white;
+        width: auto;
+    }
+    
+    .avatar {
+        height: 140px;
+        width: auto;
+    }
+    
+    .profile_match {
+        background: #00A46C;
+        color: white;
+        margin-top: -24px;
+        padding: 7px;
+        font-size: 12px !important;
+        width: auto;
+    }
+}
+
+@media(min-width:1020px) and (max-width:1200px) {
+    .content_authrization .vector {
+        background: #FBFBFB;
+        font-size: 10px;
+        border-radius: 20px;
+        padding: 5px 10px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        width: auto;
+    }
+
+    .vector-tag {
+        background: #FBFBFB;
+        font-size: 13px;
+        border-radius: 20px;
+        padding: 5px 10px;
+        border: 1px solid #E3E3E3;
+        color: var(--darkgrey);
+        width: auto;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1279px) {
+    /* .icon-edit {
+        background: #FFAE1F;
+        color: white;
+        padding: 5px 7px;
+        border-radius: 50%;
+        margin-bottom: -35px;
+        margin-left: 70%;
+        z-index: 1;
+        border: 3px solid white;
+    } */
+    /* .similar_candidates .avatar {
+        height:90px;
+        width:90px;
+    }
+
+    .similar_candidates .candidate_match {
+        background: #00A46C;
+        color: white;
+        position: relative;
+        margin-top: -20px;
+        padding: 3px 4px;
+        letter-spacing: 1px;
+        font-size: 13px;
+        border-radius: 10px;
+        width:60%;
+    }  */
+    .similar_candidates .avatar {
+        width: 100%;
+        height: 100%;
+    }
+
+    .similar_candidates .candidate_match {
+        background: #00A46C;
+        color: white;
+        position: relative;
+        margin-top: -16px!important;
+        padding: 1px 2px!important;
+        letter-spacing: 0px;
+        font-size: 12px!important;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:70%;
+    }
+    .upload-file .pdf-img {
+        height: auto;
+        width: 100%;
+    }
+
+    .upload-file .gallery-img {
+        height: auto;
+        width: 100%;
+    }
+}
+@media(min-width:1024px) and (max-width:1280px){
+    .similar_candidates .avatar {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .similar_candidates .candidate_match {
+        background: #00A46C;
+        color: white;
+        position: relative;
+        margin-top: -5px;
+        padding: 1px 0px;
+        letter-spacing: 0px;
+        font-size: 6px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .resume-right {
+        height:250px;
+    }
+    .resume-left {
+        height:740px;
+        width: 100%;
+    }
+    .resume-page {
+        height: 720px;
+        overflow-y: scroll;
+    }
+}
+@media(max-width:912px){
+    .res_data{
+        display: flex;
+        flex-direction: row;
+    }
+    .responsive-layout {
+        text-align: center;
+    }
+    .margin-top{
+        margin-top:70px;
+    }
+    .container-padding-x {
+        padding: 0px;
+    }
+    .user-profile-mobile-nav i.fa {
+        color: var(--light);
+    }
+    
+    .user-profile-mobile-nav .rounded-circle-img {
+        background: var(--blue);
+        color: white;
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .user-profile-mobile-nav .user-name {
+        font-weight: 600px;
+        color: var(--dark);
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    
+    .user-profile-mobile-nav a.dropdown-toggle {
+        color: var(--dark);
+    }
+    .user-profile-mobile-nav .rounded-circle-img {
+        background: var(--blue);
+        color: white;
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .user-profile-mobile-nav .user-name {
+        font-weight: 600px;
+        color: var(--dark);
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .edit-icon{
+        height:10px;
+        width:10px;
+    }
+    .icon-whatsapp {
+        color: #fff;
+        background: linear-gradient(#25d366, #25d366) 14% 84%/16% 16% no-repeat, radial-gradient(#25d366 58%, transparent 0);
+        font-size: auto !important;
+    }
+    
+    .icon-linkedin {
+        color: #0e76a8;
+        font-size: 15px !important;
+    }
+    .user-info .username{
+        color:var(--dark);
+        font-weight: bold;
+    }
+    .user-info .fa{
+        color:var(--yellow);
+    }
+    .user-info span{
+        color:var(--yellow);
+    }
+    .user-id{
+        color:var(--shadegrey);
+    }
+    .user-details{
+        color:var(--shadegrey);
+        font-size:12.5px;
+    }
+    .dropdown-menu[data-bs-popper] {
+        top: 100%;
+        right: 0;
+        left:60%;
+        margin-top: 0.125rem;
+    }
+    .ellipsis-menu{
+        color:var(--shadegrey);
+    }
+    .ellipsis-menu .dropdown-item{
+        color:var(--shadegrey);
+        font-size:13px;
+    }
+    .ellipsis-menu .dropdown-item .fa{
+        color:var(--blue);
+    }
+    .personal_details {
+        padding: 30px 25px;
+        border-radius: 8px;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    }
+    .personal_details .add_user {
+        border: none;
+        background: white;
+        color: var(--blue);
+        font-weight: bold;
+        border-radius: 2px;
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+    .personal_details .content{
+        color: var(--shadegrey);
+        background:rgba(182, 180, 186, 0.1);
+        padding:10px;
+        border-radius:8px;
+    }
+    .personal_details .content span{
+        color:var(--lightgrey);
+        font-weight:bold;
+    }
+
+    .personal_details .content_education {
+        font-size: 12px;
+        font-weight:normal!important;
+        color:var(--shadegrey)!important;
+    }
+    .personal_details .content_salary {
+        font-size: 14px;
+        font-weight:normal!important;
+        color:var(--shadegrey)!important;
+    }
+    .personal_details .icon-cloud {
+        color: var(--light);
+        font-size: 17px !important;
+    }
+    
+    .personal_details  .icon-share {
+        color: var(--light);
+        font-size: 17px !important;
+    }
+    .personal_details .icon-pencil {
+        color: var(--light);
+        font-size: 17px;
+    }
+    .personal_details .icon-download {
+        color: var(--light);
+        font-size: 17px;
+    }
+    .personal_details .icon-trash {
+        color: var(--light);
+        font-size: 17px;
+    }
+    .personal_details .icon-calendar {
+        color: var(--light);
+    }
+    .map-location {
+        color: var(--light);
+    }
+    
+    .calendar-icon {
+        color: var(--light);
+    }
+}
+@media(max-width:1200px) {
+    .offcanvas {
+        position: fixed;
+        bottom: 0;
+        z-index: 1045;
+        display: flex;
+        flex-direction: column;
+        max-width: 25%;
+        visibility: hidden;
+        background-color: #fff;
+        background-clip: padding-box;
+        outline: 0;
+        transition: transform .3s ease-in-out;
+    }
+    .offcanvas-header{
+        justify-content: flex-start;
+        padding:0rem;
+    }
+    .offcanvas-header .btn-close {
+        padding: 0rem;
+        margin-top: -1.5rem;
+        margin-right: -0.5rem;
+        margin-bottom: -0.5rem;
+    }
+    .offcanvas .sidebar-header {
+        padding: 10px 20px;
+        background: white;
+        z-index: -1;
+    }
+    
+    .offcanvas .ellipse1 {
+        z-index: 0;
+        margin-left: 10px;
+    }
+    
+    .offcanvas .ellipse2 {
+        margin-top: -21px;
+        z-index: 1;
+    }
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1050;
+        width: 25vw;
+        height: 100vh;
+        background-color: white;
+    }
+    .modal-backdrop.show {
+        opacity: 0;
+    }
+    #content .btn-info {
+        background: white;
+        border: 1px solid #E3E1E5;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        top: 0px;
+        left: 20px;
+        /* z-index:100!important; */
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        position: fixed;
+    }
+    #content {
+        width: 100%;
+        min-height: 100vh;
+        transition: all 0.3s;
+        /* position: absolute; */
+        top: 0;
+        right: 0;
+    }
+    .map-marker,.envelope,.phone {
+        color: var(--light);
+        font-size: 12px;
+    }
+
+    .user_nav a.active {
+        border-bottom: 3px solid blue;
+        padding: 0px;
+    }
+
+    /* Candidate Document Page */
+    .document-bottom {
+        padding-bottom: 0px;
+    }
+}
+/* Extra Large */
+@media(min-width:1290px) and (max-width:1400px) {
+    .avatar {
+        height: 120px;
+        width: auto;
+    }
+
+    .icon-edit {
+        background: #FFAE1F;
+        color: white;
+        padding: 7px 9px;
+        border-radius: 50%;
+        margin-bottom: -40px;
+        margin-left: 58%;
+        z-index: 1;
+        border: 3px solid white;
+        width: auto;
+    }
+
+    .profile_match {
+        background: #00A46C;
+        color: white;
+        margin-top: -24px;
+        padding: 7px;
+        font-size: 10px !important;
+        width: auto;
+    }
+
+    /* Candidate Resume Tab */
+    .resume-right {
+        height: 250px;
+    }
+
+    .resume-left {
+        height: 810px;
+        width: 100%;
+    }
+
+    .resume-page {
+        height: 790px;
+        overflow-y: scroll;
+    }
+
+    /* Candidate Docs Tab */
+    .upload-file .pdf-img {
+        height: auto;
+        width: 100%;
+    }
+
+    .upload-file .gallery-img {
+        height: auto;
+        width: 100%;
+    }
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

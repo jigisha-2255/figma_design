@@ -1,0 +1,43 @@
+<div class="main-page p-3 margin-top">
+    <div class="mat-display-1">Add Candidates Manually</div>
+    <hr class="hr">
+    <div class="row">
+        <div class="col-lg-3">
+            <app-list-item (Navigate)="navigateTo($event)"></app-list-item>
+        </div>
+        <div class="col-lg-9">
+            <div>
+                <section #details>
+                    <app-add-personal-details></app-add-personal-details>
+                </section>
+                <section #language>
+                    <app-add-language></app-add-language>
+                </section>
+                <section #education>
+                    <app-add-education></app-add-education>
+                </section>
+                <section #projects>
+                    <app-add-projects></app-add-projects>    
+                </section>
+                <section #experience>
+                    <app-add-experience></app-add-experience>
+                </section>
+                <section #salary>
+                <app-add-salary-details></app-add-salary-details>
+            </section>
+            <section #skills>
+                <app-add-skills></app-add-skills>
+            </section>
+            <section #certificate>
+                <app-add-certificate></app-add-certificate>
+            </section>
+            </div>
+            <div class="row">
+                <div class="col text-end">
+                    <button mat-stroked-button>Cancel</button>
+                    <button mat-stroked-button class="ms-2 candidate-btn">Add Candidate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

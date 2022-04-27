@@ -1,0 +1,63 @@
+.main-page {
+    margin-left: 90px;
+    overflow: hidden !important;
+}
+
+.mat-display-1 {
+    margin: 0px;
+}
+
+.hr {
+    border: 1px solid #EBEAED;
+}
+
+// Style for change height of mat-form-field box and label position in center 
+::ng-deep .mat-form-field-flex>.mat-form-field-infix {
+    padding: 0.7em 0px !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-label {
+    margin-top: -15px;
+}
+
+::ng-deep label.ng-star-inserted {
+    transform: translateY(-0.59375em) scale(.75) !important;
+}
+
+// End style for mat-form-field and label
+
+// Adjust accordingly to keep placeholder/input text/Select text vertically centered
+::ng-deep .mat-form-field .mat-input-element,
+::ng-deep .mat-form-field .mat-select {
+    position: relative;
+    top: -0.3em;
+    font-weight: normal !important;
+}
+
+::ng-deep .mat-input-placeholder,
+::ng-deep .mat-select-placeholder {
+    font-weight: normal !important;
+}
+
+::ng-deep .mat-select-value {
+    color: rgba(0, 0, 0, .42);
+}
+
+.candidate-btn{
+    border:1px solid #1F47F5;
+    color:#1F47F5;
+}
+
+.mat-stroked-button{
+    font-size:13px!important;
+}
+.active{
+    color:#1F47F5;
+}
+
+// End Adjust accordingly to keep placeholder/input text/Select text vertically centered
+@media(max-width:700px) {
+    .main-page {
+        margin-left: auto;
+    }
+}

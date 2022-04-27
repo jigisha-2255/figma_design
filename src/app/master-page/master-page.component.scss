@@ -1,0 +1,13 @@
+.main-page{
+    margin-left:90px;
+}
+::ng-deep .mat-tab-body-content {
+    height: 100%;
+    overflow: hidden !important;
+}
+
+@media(max-width:700px){
+    .main-page{
+        margin-left:auto;
+    }
+}
