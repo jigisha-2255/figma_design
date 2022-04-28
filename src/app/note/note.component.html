@@ -19,7 +19,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row d-none d-lg-flex">
                         <div class="col-12 flex-end">
                             <div>
                                 <mat-form-field appearance="outline">
@@ -32,6 +32,19 @@
                             <div>
                                 <button mat-stroked-button class="ms-2 me-2 add-btn">Add Note</button>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row d-lg-none">
+                        <div class="col-12 mt-2">
+                            <button mat-stroked-button class="w-100 add-btn">Add Note</button>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <mat-form-field class="w-100" appearance="outline">
+                                <mat-select placeholder="Everyone">
+                                    <mat-option value="option1">Everyone</mat-option>
+                                    <mat-option value="option2">Personal</mat-option>
+                                </mat-select>
+                            </mat-form-field>
                         </div>
                     </div>
                     <div class="row note">

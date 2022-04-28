@@ -1,1 +1,38 @@
-<p>chat works!</p>
+<div id="chat">
+    <div class="row bg-light container-padding container-margin">
+        <div class="col-xl-8 col-xxl-9">
+            <div class="row mx-1 my-4">
+                <div class="col bg-white">
+                    <div class="row">
+                        <div class="col-12 personal_details">
+                            <mat-tab-group>
+                                <mat-tab label="Whatsapp">
+                                    <app-whatsapp-chat></app-whatsapp-chat>
+                                </mat-tab>
+                                <mat-tab label="Email">
+                                    <app-email-chat></app-email-chat>
+                                </mat-tab>
+                                <mat-tab label="Reply Email">
+                                    <app-reply-email></app-reply-email>
+                                </mat-tab>
+                                <mat-tab label="SMS">
+                                    <app-sms-chat></app-sms-chat>
+                                </mat-tab>
+                            </mat-tab-group>
+                            <!-- <button mat-button [matMenuTriggerFor]="menu" class="dropdown-right">
+                                All <mat-icon>keyboard_arrow_down</mat-icon>
+                              </button>
+                              <mat-menu #menu="matMenu">
+                                <button mat-menu-item>All</button>
+                                <button mat-menu-item>Specific</button>
+                              </mat-menu> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-xxl-3">
+            <app-right-part></app-right-part>
+        </div>
+    </div>
+</div>

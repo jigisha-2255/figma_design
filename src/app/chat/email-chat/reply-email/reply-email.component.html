@@ -1,0 +1,140 @@
+<div class="row reply-email">
+    <div class="col-12">
+        <div class="row">
+            <div class="col">
+                <div class="row reply-email-top">
+                    <div class="col-9 d-flex">
+                        <img src="../assets/media/avatar.png" alt="" class="avatar">
+                        <h2 class="my-auto">Riley Cooper</h2>
+                    </div>
+                    <div class="col-3 flex-end my-auto">
+                        <mat-icon class="me-2">reply</mat-icon>
+                        <mat-icon class="me-2"> local_printshop</mat-icon>
+                        <mat-icon>delete</mat-icon>
+                    </div>
+                </div>
+                <div class="row reply-email-bottom">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <img src="../assets/media/avatar.png" alt="" class="avatar">
+                            </div>
+                            <div class="col-md-11 reply-email-right">
+                                <div class="row">
+                                    <div class="col d-flex">
+                                        <mat-icon class="me-2 reply">reply</mat-icon>
+                                        <h4>Reply to Email</h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        Recepientes Email
+                                        <div class="row rec-email">
+                                            <div class="col-10 email">
+                                                riley@example.com
+                                            </div>
+                                            <div class="col-2 flex-end">
+                                                <span class="me-2">CC</span>
+                                                <span>BCC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        Message
+                                        <div class="row msg-header">
+                                            <div class="col-lg-8">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <button mat-button [matMenuTriggerFor]="menu" class="dropdown-right">
+                                                        Headline 1
+                                                            <mat-icon class="arrow my-auto">keyboard_arrow_down</mat-icon>
+                                                        </button>
+                                                        <mat-menu #menu="matMenu">
+                                                            <button
+                                                                mat-menu-item>Headline 1</button>
+                                                            <button
+                                                                mat-menu-item>Headline 2</button>
+                                                        </mat-menu>
+                                                    </div>
+                                                    <div class="col-lg-3 text-formatting my-auto">
+                                                        <mat-icon> format_bold</mat-icon>
+                                                        <mat-icon> format_italic</mat-icon>
+                                                        <mat-icon> format_underlined</mat-icon>
+                                                        <mat-icon> format_strikethrough</mat-icon>
+                                                    </div>
+                                                    <div class="col-lg-3 text-formatting my-auto">
+                                                        <mat-icon>link</mat-icon>
+                                                        <mat-icon> format_quote</mat-icon>
+                                                        <mat-icon>code</mat-icon>
+                                                        <mat-icon>image</mat-icon>
+                                                    </div>
+                                                    <div class="col-lg-3 text-formatting my-auto">
+                                                        <mat-icon> format_list_bulleted</mat-icon>
+                                                        <mat-icon> format_list_numbered</mat-icon>
+                                                        <mat-icon> format_list_numbered_rtl</mat-icon>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 flex-md-end">
+                                                <button mat-button [matMenuTriggerFor]="menu2" class="dropdown-right">
+                                                <span>Select Template</span>
+                                                    <mat-icon class="span-arrow my-auto">keyboard_arrow_down</mat-icon>
+                                                </button>
+                                                <mat-menu #menu2="matMenu">
+                                                    <button
+                                                        mat-menu-item>Select Template</button>
+                                                    <button
+                                                        mat-menu-item>Select Template 2</button>
+                                                </mat-menu>
+                                            </div>
+                                        </div>
+                                        <div class="row email-msg">
+                                            <div class="col">
+                                                <p>Hi,</p>
+                                                <p>
+                                                    Train hard. Stay dry. This soccer jacket is made of soft,
+                                                    sweat-wicking fabric that keeps you moving on the practice field.
+                                                    Stretch panels at the elbows and sides give you a full range of
+                                                    motion as you work.<br>
+                                                    Candidate Link will be sent
+                                                </p>
+                                                <p>
+                                                    Signature <br> Talent Recruit
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex flex-column flex-lg-row">
+                                        <div class="my-auto">Sending from</div>
+                                        <div>
+                                            <button mat-button [matMenuTriggerFor]="menu" class="dropdown-right">
+                                                <span>talentacquisitionteam@talentrecuit.com</span>
+                                                <mat-icon class="arrow my-auto">keyboard_arrow_down</mat-icon>
+                                            </button>
+                                            <mat-menu #menu="matMenu">
+                                                <button
+                                                    mat-menu-item><span>talentacquisitionteam@talentrecuit.com</span></button>
+                                                <button
+                                                    mat-menu-item><span>talentacquisitionteam@talentrecuit.com</span></button>
+                                            </mat-menu>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col text-end">
+                                        <button mat-stroked-button>Cancel</button>
+                                        <button mat-stroked-button class="ms-2 reply-btn">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

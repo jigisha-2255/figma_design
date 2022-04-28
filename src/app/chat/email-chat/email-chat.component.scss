@@ -1,0 +1,46 @@
+.email-chat{
+    padding:20px 15px;
+    .avatar{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        margin-right:10px;
+    }
+    .align-center{
+        display:flex;
+        align-items:center;
+    }
+    .email-top{
+        border:1px solid #f5f5f5;
+        background: #FFFFFF;
+        padding:10px;
+        .mat-icon{
+            color:#B6B4BA;
+            font-size:20px;
+        }
+    }
+    .email-bottom{
+        background: #FFFFFF;
+        padding:10px;
+        .mat-icon{
+            color:#B6B4BA;
+            font-size:20px;
+        }
+        small{
+            color:#84818A;
+        }
+        a{
+            color:#1F47F5!important;
+        }
+        .hr-right{
+            margin-top:-20px;
+            margin-left:40px;
+            width:95%;
+        }
+        .mini-fab-btn{
+            background:#EBEAED;
+            color:#1F47F5;
+            box-shadow: none;
+        }
+    }
+}

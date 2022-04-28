@@ -42,6 +42,11 @@ import { NoteComponent } from './note/note.component';
 import { ChatComponent } from './chat/chat.component';
 import { InterviewsComponent } from './interviews/interviews.component';
 import { EvaluationComponent } from './evaluation/evaluation.component';
+import { WhatsappChatComponent } from './chat/whatsapp-chat/whatsapp-chat.component';
+import { EmailChatComponent } from './chat/email-chat/email-chat.component';
+import { SmsChatComponent } from './chat/sms-chat/sms-chat.component';
+import { ReplyEmailComponent } from './chat/email-chat/reply-email/reply-email.component';
+import { TablePaginationComponent } from './evaluation/table-pagination/table-pagination.component';
 // import { CustomDatepickerComponent } from './add-candidate/add-education/custom-datepicker/custom-datepicker.component';
 
 @NgModule({
@@ -76,6 +81,11 @@ import { EvaluationComponent } from './evaluation/evaluation.component';
     ChatComponent,
     InterviewsComponent,
     EvaluationComponent,
+    WhatsappChatComponent,
+    EmailChatComponent,
+    SmsChatComponent,
+    ReplyEmailComponent,
+    TablePaginationComponent,
     // CustomDatepickerComponent
   ],
   imports: [

@@ -1,0 +1,109 @@
+<div class="row whatsapp-chat">
+    <div class="col-12">
+        <div class="row py-0 my-0">
+            <div class="col-10 d-flex align-items-center">
+                <h2 class="me-2">Daniel Jones</h2>
+                <mat-icon class="active-icon">fiber_manual_record</mat-icon>
+                <p class="online">Online</p>
+            </div>
+            <div class="col-2 flex-end">
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                        <mat-icon>dialpad</mat-icon>
+                        <span>Redial</span>
+                    </button>
+                    <button mat-menu-item disabled>
+                        <mat-icon>voicemail</mat-icon>
+                        <span>Check voice mail</span>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>notifications_off</mat-icon>
+                        <span>Disable alerts</span>
+                    </button>
+                </mat-menu>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="row bg-light p-3 chat-system">
+            <div class="col">
+                <div class="row">
+                    <div class="col d-flex">
+                        <img src="../assets/media/avatar.png" alt="" class="avatar-left">
+                        <div>
+                            <p class="chat-box-left mb-1">Hello! I think I found a bug!</p>
+                            <small>Today 11:52</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex flex-end">
+                        <div>
+                            <p class="chat-box-right mb-1">Hello! I’m sorry to hear this. Could youshow me a screenshot
+                                about what happens?</p>
+                            <small class="flex-end">Today 11:54</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex">
+                         <img src="../assets/media/avatar.png" alt="" class="avatar-left">
+                         <div>
+                             <p class="chat-box-left mb-1">Sure. Taking a screenshot right now.</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex">
+                         <img src="../assets/media/avatar.png" alt="" class="avatar-left" style="visibility: hidden;">
+                         <div class="ps-4">
+                            <p class="chat-box-left mb-1">Your text goes here<br/>
+                                <img src="../assets/media/bitmap-image.png" alt="" class="bitmap-img">
+                            </p>
+                            <small>Today 11:59</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex flex-end">
+                        <div>
+                            <p class="chat-box-right mb-1">Thanks you! I’m reporting this internally</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex flex-end">
+                        <div>
+                            <p class="chat-box-right mb-1">Hey Bryan, it’s Nadim from Cuboid. Following back on what we said early, we have made some improvements so please update your application to get fix the problem. 
+                                Thanks </p>
+                            <small class="flex-end">Today 11:64</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3 chat-system-bottom">
+            <div class="col">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <p class="align-center"> 
+                            <mat-icon class="me-2">tag_faces</mat-icon>
+                            Send your message...
+                        </p>
+                    </div>
+                    <div class="align-center">
+                        <mat-icon class="me-2">add</mat-icon>  
+                        <div class="send">
+                            <mat-icon>send</mat-icon>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

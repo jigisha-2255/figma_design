@@ -30,6 +30,18 @@
             background:#1F47F5;
             border:none;
         }
+        .list-schedule{
+           color:#FE6730;
+           font-size:10px; 
+        }
+        .list-round{
+            color:#9C27B0;
+            font-size:10px;
+        }
+        .list-slots{
+           color:#1F47F5;
+           font-size:10px;
+        }
         .calendar-icon{
             color:#1F47F5;
         }
@@ -63,6 +75,12 @@
         .interview-data .mat-icon{
             color:#B6B4BA;
         }
+        .timer{
+            color:#FFAE1F!important;
+        }
+        .dislike{
+            color:#FE6730!important;
+        }
         .check-circle{
             color:#00A46C!important;
         }
@@ -89,4 +107,14 @@
             color:#1F47F5!important;
         }
     }  
+}
+
+@media(max-width:700px){
+    .interview-btn{
+        color: white;
+        width:50%!important;
+    } 
+    .interview-data{
+        margin-top:5px!important;
+    }
 }

@@ -1,13 +1,3 @@
-.add-doc-file {
-    background: var(--blue);
-    color: white;
-    font-size: 13px;
-    width: 100%;
-}
-
-.add-doc-file:hover {
-    color: var(--white);
-}
 #evaluation{
     .icon-title{
         display:flex;
@@ -59,10 +49,64 @@
         color:#84818A;
         font-weight:bold;
     }
+    .search-icon{
+        color:#B6B4BA!important;
+    }
+    .format{
+        border:1px solid  #E5E5E5;
+        border-radius:4px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:#1F47F5;
+    }
+    .evaluation-responsive{
+        margin:10px 0;
+        .not-hire{
+            color:#FE6730;
+            font-weight:bold;
+        }
+        .hire{
+            color:#00A46C;
+            font-weight:bold;
+        }
+        .average{
+            color:#84818A;
+            font-weight:bold;
+        }
+        .star{
+            font-size:20px;
+        }
+        .evaluation-btn{
+            border: 1px solid #EBEAED;
+            background-color: #1F47F5;
+            height:auto;
+            color:white;
+            width:100%;
+        }  
+        p.rate{
+            color:#504F54!important;
+        }
+        p{
+            color:#84818A;
+            font-size:14px;
+            margin:0;
+        }
+    }
 }
 ::ng-deep{
     .mat-form-field-appearance-outline .mat-form-field-wrapper {
         margin:0;
         padding:0;
+    }
+}
+@media(max-width:700px){
+    .personal_details{
+        padding:10px!important;
+    }
+    .evaluation-head {
+        background:none!important;
+        padding: 8px 0px;
+        border-bottom: none!important;
     }
 }
