@@ -47,6 +47,9 @@ import { EmailChatComponent } from './chat/email-chat/email-chat.component';
 import { SmsChatComponent } from './chat/sms-chat/sms-chat.component';
 import { ReplyEmailComponent } from './chat/email-chat/reply-email/reply-email.component';
 import { TablePaginationComponent } from './evaluation/table-pagination/table-pagination.component';
+import { CandidateComponent } from './candidate/candidate.component';
+import { AdvancedFilterComponent } from './candidate/advanced-filter/advanced-filter.component';
+import { CandidateListComponent } from './candidate/candidate-list/candidate-list.component';
 // import { CustomDatepickerComponent } from './add-candidate/add-education/custom-datepicker/custom-datepicker.component';
 
 @NgModule({
@@ -86,6 +89,9 @@ import { TablePaginationComponent } from './evaluation/table-pagination/table-pa
     SmsChatComponent,
     ReplyEmailComponent,
     TablePaginationComponent,
+    CandidateComponent,
+    AdvancedFilterComponent,
+    CandidateListComponent,
     // CustomDatepickerComponent
   ],
   imports: [

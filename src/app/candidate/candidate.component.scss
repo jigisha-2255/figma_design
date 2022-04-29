@@ -1,0 +1,75 @@
+.candidate {
+    margin-left: 90px;
+    overflow: hidden !important;
+}
+
+.mat-display-1 {
+    margin: 0px;
+}
+
+.hr {
+    border: 1px solid #EBEAED;
+}
+
+.add-candidate {
+    border: 1px solid #1F47F5;
+    color: white;
+    height: auto;
+    background: #1F47F5;
+}
+
+.export-btn {
+    border: 1px solid #EBEAED;
+    color: #1F47F5;
+    height: auto;
+    background: white;
+}
+
+::ng-deep {
+    .mat-form-field-appearance-outline .mat-form-field-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .mat-select {
+        width: 50px;
+    }
+
+    .mat-select-trigger {
+        height: 1em;
+        top: -3px;
+    }
+
+    .mat-select-arrow-wrapper {
+        height: 0px !important;
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .mat-form-field-flex>.mat-form-field-infix {
+        padding: 0.4em 0px !important;
+    }
+
+    .mat-form-field-appearance-outline .mat-form-field-label {
+        margin-top: -15px;
+    }
+
+    label.ng-star-inserted {
+        transform: translateY(-0.59375em) scale(.75) !important;
+    }
+
+    .mat-form-field-flex {
+        display: inline-flex;
+        align-items: baseline;
+        box-sizing: border-box;
+        // width: 30%!important;
+    }
+}
+
+// End Adjust accordingly to keep placeholder/input text/Select text vertically centered
+@media(max-width:700px) {
+    .main-page {
+        margin-left: auto;
+    }
+}
