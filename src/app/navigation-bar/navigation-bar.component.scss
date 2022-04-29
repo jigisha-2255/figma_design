@@ -34,6 +34,10 @@ mat-icon{
   margin-left:20px;
 }
 
+.candidate{
+  margin-left:-100px;
+}
+
 .hr{
   margin:10px 10px;
 }
@@ -60,6 +64,6 @@ mat-icon{
     border-bottom: 1px solid #E3E1E5;
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 999;
   }
 }

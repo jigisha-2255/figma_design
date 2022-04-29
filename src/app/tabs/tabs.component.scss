@@ -8,10 +8,14 @@
 ::ng-deep.mat-tab-group.mat-primary .mat-ink-bar, ::ng-deep .mat-tab-nav-bar.mat-primary .mat-ink-bar {
     background: #1F47F5!important;
 }
-:host ::ng-deep .mat-badge-content 
-{
-    top: -2px !important;
-    background : #FF715A;
-    font-size:10px;
-
+:host ::ng-deep{
+    .mat-badge-content 
+    {
+        top: -2px !important;
+        background : #FF715A;
+        font-size:10px;
+    }
+    .mat-tab-header{
+        z-index:0!important;
+    }
 }

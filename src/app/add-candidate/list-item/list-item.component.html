@@ -1,4 +1,4 @@
-<mat-nav-list class="list-item">
+<mat-nav-list class="list-item d-none d-lg-block">
     <a mat-list-item (click)="navigateTo('details')" class="active">
         <span class="d-flex align-items-center">
             <mat-icon class="example-tab-icon me-2">person</mat-icon>
@@ -39,5 +39,103 @@
     <a mat-list-item (click)="navigateTo('certificate')">
         <mat-icon class="me-2">insert_drive_file</mat-icon>
         Certificates
+    </a>
+</mat-nav-list>
+
+<mat-nav-list class="list-item d-lg-none">
+    <a mat-list-item (click)="navigateTo('details')">
+        <span class="w-100 d-flex justify-content-between">
+            <span class="d-flex align-items-center">
+                <mat-icon class="example-tab-icon details me-2">person</mat-icon>
+                Personal Details
+            </span>
+            <span>
+                <mat-icon class="edit">edit</mat-icon>   
+            </span>
+        </span>
+    </a>
+    <hr>
+    <a mat-list-item (click)="navigateTo('language')">
+        <span class="w-100 d-flex justify-content-between">
+            <span class="d-flex align-items-center">
+                <mat-icon class="example-tab-icon language me-2">language</mat-icon>
+                Language
+            </span>
+            <span>
+                <mat-icon class="edit">edit</mat-icon>   
+            </span>
+        </span>
+    </a>
+    <hr>
+    <a mat-list-item (click)="navigateTo('education')">
+        <span class="w-100 d-flex justify-content-between">
+            <span class="d-flex align-items-center">
+                <mat-icon class="me-2 education">insert_drive_file</mat-icon>
+                Education
+            </span>
+            <span>
+                <mat-icon class="edit">edit</mat-icon>   
+            </span>
+        </span>
+    </a>
+    <hr>
+    <a mat-list-item (click)="navigateTo('projects')">
+        <span class="w-100 d-flex justify-content-between">
+            <span class="d-flex align-items-center">
+                <mat-icon class="me-2 projects">build</mat-icon>
+                Projects
+            </span>
+            <span>
+                <mat-icon class="edit">edit</mat-icon>   
+            </span>
+        </span>
+    </a>
+    <hr>
+    <a mat-list-item (click)="navigateTo('experience')">
+        <span class="w-100 d-flex justify-content-between">
+            <span class="d-flex align-items-center">
+                <mat-icon class="me-2 experience">card_travel</mat-icon>
+                Experience
+            </span>
+            <span>
+                <mat-icon class="edit">edit</mat-icon>   
+            </span>
+        </span>
+    </a>
+    <hr>
+    <a mat-list-item (click)="navigateTo('salary')">
+        <span class="w-100 d-flex justify-content-between">
+            <span class="d-flex align-items-center">
+                <mat-icon class="me-2 salary">monetization_on</mat-icon>
+                Salary Details
+            </span>
+            <span>
+                <mat-icon class="edit">edit</mat-icon>   
+            </span>
+        </span>
+    </a>
+    <hr>
+    <a mat-list-item (click)="navigateTo('skills')">
+        <span class="w-100 d-flex justify-content-between">
+            <span class="d-flex align-items-center">
+                <mat-icon class="me-2 skills">person</mat-icon>
+                Skills
+            </span>
+            <span>
+                <mat-icon class="edit">edit</mat-icon>   
+            </span>
+        </span>
+    </a>
+    <hr>
+    <a mat-list-item (click)="navigateTo('certificate')">
+        <span class="w-100 d-flex justify-content-between">
+            <span class="d-flex align-items-center">
+                <mat-icon class="me-2 certificates">insert_drive_file</mat-icon>
+                Certificates
+            </span>
+            <span>
+                <mat-icon class="edit">edit</mat-icon>   
+            </span>
+        </span>
     </a>
 </mat-nav-list>

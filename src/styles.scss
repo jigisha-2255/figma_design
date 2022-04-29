@@ -27,6 +27,10 @@ body {
     margin:0;
 }
 
+.mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button, .mat-flat-button, .mat-fab, .mat-mini-fab {
+    font-weight: 400;
+}
+
 ::ng-deep .mat-tab-body-content {
     height: 100%;
     overflow: hidden !important;

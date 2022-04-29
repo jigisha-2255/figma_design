@@ -46,7 +46,8 @@
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
       </div>
-      <div style="display:flex; justify-content: center; align-items: center;">
+      <div class="candidate d-lg-none">Candidate</div>
+      <div style="display:flex; justify-content: center; align-items: center;" class="d-none d-lg-flex">
         <mat-icon>search</mat-icon>
         <mat-icon>mail</mat-icon>
         <mat-icon matBadge="4" matBadgeColor="warn" class="me-4">notifications_none</mat-icon>
@@ -55,6 +56,17 @@
         </button>
         <button mat-button [matMenuTriggerFor]="menu">
           Maxbert <mat-icon>arrow_drop_down</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Profile</button>
+          <button mat-menu-item>Logout</button>
+        </mat-menu>
+      </div>
+      <div style="display:flex; justify-content: center; align-items: center;" class="d-lg-none">
+        <button mat-button [matMenuTriggerFor]="menu">
+          <button mat-mini-fab aria-label="Example icon button with a plus one icon" style="background:#1F47F5;">
+            MB
+          </button>
         </button>
         <mat-menu #menu="matMenu">
           <button mat-menu-item>Profile</button>

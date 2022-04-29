@@ -7,6 +7,42 @@
     align-items: center;
     justify-content: center;
 }
+.mat-icon.edit{
+    border:none!important;
+    color: #B6B4BA;
+}
+.details{
+    background:#5542F6;
+    color:white;
+}
+.language{
+    background:#FFA043;
+    color:white;
+}
+.education{
+    background:#14B13B;
+    color:white;
+}
+.projects{
+    background:#FA699D;
+    color:white;
+}
+.experience{
+    background:#00A5FF;
+    color:white;
+}
+.salary{
+    background:#9C27B0;
+    color:white;
+}
+.skills{
+    background:#FE6730;
+    color:white;
+}
+.certificates{
+    background:#c11755;
+    color:white;
+}
 ::ng-deep .list-item .mat-list-item .mat-list-item-content{
     padding:0px;
 }

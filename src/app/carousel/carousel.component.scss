@@ -43,7 +43,11 @@
     margin-left: 58%;
     z-index: 1;
     border: 3px solid white;
-    width: auto;
+    width: 35px;
+    height:35px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .avatar {

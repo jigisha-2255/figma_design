@@ -8,8 +8,8 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./table-pagination.component.scss']
 })
 export class TablePaginationComponent {
-  
-  displayedColumns = ['position','stage', 'interview', 'evaluation', 'recommendation','actions'];
+  // currentPage = 3;
+  displayedColumns = ['stage', 'interview', 'evaluation', 'recommendation','actions'];
   dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -20,6 +20,16 @@ export class TablePaginationComponent {
    */
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
+    this.paginator._intl.itemsPerPageLabel = 'Show Records';
+    this.paginator._intl.firstPageLabel = 'First Page';
+    this.paginator._intl.lastPageLabel = 'Last Page';
+    this.paginator._intl.nextPageLabel = 'Next Page';
+    this.paginator._intl.previousPageLabel = 'Previous Page';
+    // this.paginator._intl.getRangeLabel = (page: number, pageSize: number, length: number) => {
+    //   const start =1;
+    //   const end = 3;
+    //   return `2`
+    // };
   }
 }
 
@@ -39,11 +49,12 @@ const ELEMENT_DATA: Element[] = [
   {position: 4, stage: 'Submitted to HR', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Average', actions: 'H'},
   {position: 5, stage: 'Offered', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Average', actions: 'H'},
   {position: 6, stage: 'Submitted to HR', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Hire', actions: 'H'},
-  {position: 7, stage: 'Nitrogen', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Do Not Hire', actions: 'H'},
-  {position: 8, stage: 'Oxygen', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Do Not Hire', actions: 'H'},
-  {position: 9, stage: 'Fluorine', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Do Not Hire', actions: 'H'},
-  {position: 10, stage: 'Neon', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Do Not Hire', actions: 'H'},
-  {position: 11, stage: 'Sodium', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Do Not Hire', actions: 'H'},
-  {position: 12, stage: 'Magnesium', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Do Not Hire', actions: 'H'},
+  {position: 7, stage: 'Screening', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Do Not Hire', actions: 'H'},
+  {position: 8, stage: 'Pool', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Hire', actions: 'H'},
+  {position: 9, stage: 'Screening', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Do Not Hire', actions: 'H'},
+  {position: 10, stage: 'Submitted to HR', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Average', actions: 'H'},
+  {position: 11, stage: 'Offered', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Average', actions: 'H'},
+  {position: 12, stage: 'Submitted to HR', interview: 'Evaluation Failed Without Interview', evaluation: 'by deanrogers@gmail.com a month ago',recommendation:'Hire', actions: 'H'}
+ 
 ];
 

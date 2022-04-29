@@ -99,6 +99,25 @@
         margin:0;
         padding:0;
     }
+    .mat-select-trigger {
+        height: 1.125em;
+        top: -3px;
+    }
+    .mat-select-arrow-wrapper {
+        height: 0px!important; 
+        flex-shrink: 0;
+        display: inline-flex;
+        align-items: center;
+    }
+    .mat-paginator-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between!important;
+        // padding: 0 8px;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        background: var(--lightshade);
+    }
 }
 @media(max-width:700px){
     .personal_details{
