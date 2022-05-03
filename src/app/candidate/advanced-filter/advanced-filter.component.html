@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col d-flex justify-content-between">
                 <mat-icon class="filter-list">filter_list</mat-icon>
-                <p class="me-2">Advanced Filter</p>
+                <p class="me-2 filter">Advanced Filters</p>
                 <div class="d-flex flex-end">
                     <mat-icon class="file me-2">insert_drive_file</mat-icon>
                     <mat-icon class="backspace">keyboard_backspace</mat-icon>
@@ -14,27 +14,32 @@
         <div class="row my-2">
             <div class="col">
                 <div class="justify-between">
-                    <div>Keyword</div>
-                    <div>
-                        <mat-icon class="active-icon">fiber_manual_record</mat-icon>
-                        Contains
-                        <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-                            <mat-icon>more_vert</mat-icon>
-                        </button>
-                        <mat-menu #menu="matMenu">
-                            <button mat-menu-item>
-                                <mat-icon>dialpad</mat-icon>
-                                <span>Redial</span>
+                    <div class="keyword">Keyword</div>
+                    <div class="d-flex">
+                        <div>
+                            <mat-icon class="active-icon">fiber_manual_record</mat-icon>
+                            <span class="contains">Contains</span>
+                        </div>
+                        <div>
+                            <button class="mat-menu" mat-icon-button [matMenuTriggerFor]="menu"
+                                aria-label="Example icon-button with a menu">
+                                <mat-icon>more_vert</mat-icon>
                             </button>
-                            <button mat-menu-item disabled>
-                                <mat-icon>voicemail</mat-icon>
-                                <span>Check voice mail</span>
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>notifications_off</mat-icon>
-                                <span>Disable alerts</span>
-                            </button>
-                        </mat-menu> -->
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item>
+                                    <mat-icon>dialpad</mat-icon>
+                                    <span>Redial</span>
+                                </button>
+                                <button mat-menu-item disabled>
+                                    <mat-icon>voicemail</mat-icon>
+                                    <span>Check voice mail</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>not1ifications_off</mat-icon>
+                                    <span>Disable alerts</span>
+                                </button>
+                            </mat-menu>
+                        </div>
                     </div>
                 </div>
                 <div class="my-2">
@@ -51,27 +56,32 @@
         <div class="row my-2">
             <div class="col-12">
                 <div class="justify-between">
-                    <div>Exclude Keyword</div>
-                    <div>
-                        <mat-icon class="active-icon">fiber_manual_record</mat-icon>
-                        Contains
-                        <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-                            <mat-icon>more_vert</mat-icon>
-                        </button>
-                        <mat-menu #menu="matMenu">
-                            <button mat-menu-item>
-                                <mat-icon>dialpad</mat-icon>
-                                <span>Redial</span>
+                    <div class="keyword">Exclude Keywords</div>
+                    <div class="d-flex">
+                        <div>
+                            <mat-icon class="active-icon">fiber_manual_record</mat-icon>
+                            <span class="contains">Contains</span>
+                        </div>
+                        <div>
+                            <button class="mat-menu" mat-icon-button [matMenuTriggerFor]="menu"
+                                aria-label="Example icon-button with a menu">
+                                <mat-icon>more_vert</mat-icon>
                             </button>
-                            <button mat-menu-item disabled>
-                                <mat-icon>voicemail</mat-icon>
-                                <span>Check voice mail</span>
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>notifications_off</mat-icon>
-                                <span>Disable alerts</span>
-                            </button>
-                        </mat-menu> -->
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item>
+                                    <mat-icon>dialpad</mat-icon>
+                                    <span>Redial</span>
+                                </button>
+                                <button mat-menu-item disabled>
+                                    <mat-icon>voicemail</mat-icon>
+                                    <span>Check voice mail</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>not1ifications_off</mat-icon>
+                                    <span>Disable alerts</span>
+                                </button>
+                            </mat-menu>
+                        </div>
                     </div>
                 </div>
                 <div class="my-2">
@@ -89,11 +99,12 @@
             <div class="col">
                 <div class="justify-between">
                     <div class="my-auto">
-                        Area
+                        <mat-icon>donut_large</mat-icon>
+                        <span class="keyword">Area</span>
                     </div>
-                    <div>
+                    <div class="my-auto">
                         <button mat-button [matMenuTriggerFor]="menu" class="dropdown-right">
-                            Kilometer <mat-icon>keyboard_arrow_down</mat-icon>
+                            <span class="contains">Kilometer <mat-icon>keyboard_arrow_down</mat-icon></span>
                         </button>
                         <mat-menu #menu="matMenu">
                             <button mat-menu-item>All</button>
@@ -109,27 +120,32 @@
         <div class="row my-2">
             <div class="col">
                 <div class="justify-between">
-                    <div>Job Title</div>
-                    <div>
-                        <mat-icon class="active-icon">fiber_manual_record</mat-icon>
-                        Contains
-                        <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-                            <mat-icon>more_vert</mat-icon>
-                        </button>
-                        <mat-menu #menu="matMenu">
-                            <button mat-menu-item>
-                                <mat-icon>dialpad</mat-icon>
-                                <span>Redial</span>
+                    <div class="keyword">Job Title</div>
+                    <div class="d-flex">
+                        <div>
+                            <mat-icon class="active-icon">fiber_manual_record</mat-icon>
+                            <span class="contains">Contains</span>
+                        </div>
+                        <div>
+                            <button class="mat-menu" mat-icon-button [matMenuTriggerFor]="menu"
+                                aria-label="Example icon-button with a menu">
+                                <mat-icon>more_vert</mat-icon>
                             </button>
-                            <button mat-menu-item disabled>
-                                <mat-icon>voicemail</mat-icon>
-                                <span>Check voice mail</span>
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>notifications_off</mat-icon>
-                                <span>Disable alerts</span>
-                            </button>
-                        </mat-menu> -->
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item>
+                                    <mat-icon>dialpad</mat-icon>
+                                    <span>Redial</span>
+                                </button>
+                                <button mat-menu-item disabled>
+                                    <mat-icon>voicemail</mat-icon>
+                                    <span>Check voice mail</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>notifications_off</mat-icon>
+                                    <span>Disable alerts</span>
+                                </button>
+                            </mat-menu>
+                        </div>
                     </div>
                 </div>
                 <div class="my-2">
@@ -145,20 +161,20 @@
         </div>
         <div class="row my-2">
             <div class="col">
-                Candidate Type
+                <span class="keyword">Candidate Type</span>
                 <section class="example-section">
-                    <span class="example-list-section">
-                        <mat-checkbox class="example-margin mt-1">All</mat-checkbox><br/>
-                        <mat-checkbox class="example-margin mt-1">External</mat-checkbox><br/>
+                    <span class="example-list-section contains">
+                        <mat-checkbox class="example-margin mt-1">All</mat-checkbox><br />
+                        <mat-checkbox class="example-margin mt-1 mat-check" checked>External</mat-checkbox><br />
                         <mat-checkbox class="example-margin mt-1">Internal</mat-checkbox>
                     </span>
-                  </section>
+                </section>
             </div>
         </div>
         <div class="row my-2">
             <div class="col">
                 <div class="justify-between my-2">
-                    <div class="blue">Work remotely </div> 
+                    <div class="blue">Work remotely </div>
                 </div>
                 <div class="justify-between my-2">
                     <div class="blue">
@@ -173,10 +189,10 @@
                 <span class="w-100 d-flex justify-content-between">
                     <span class="d-flex align-items-center">
                         <mat-icon class="example-tab-icon me-2">card_travel</mat-icon>
-                        Professional
+                        <span class="keyword">Professional</span>
                     </span>
                     <span>
-                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>   
+                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>
                     </span>
                 </span>
             </a>
@@ -185,10 +201,10 @@
                 <span class="w-100 d-flex justify-content-between">
                     <span class="d-flex align-items-center">
                         <mat-icon class="example-tab-icon me-2">book</mat-icon>
-                        Education
+                        <span class="keyword">Education</span>
                     </span>
                     <span>
-                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>   
+                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>
                     </span>
                 </span>
             </a>
@@ -197,10 +213,10 @@
                 <span class="w-100 d-flex justify-content-between">
                     <span class="d-flex align-items-center">
                         <mat-icon class="me-2">person_pin</mat-icon>
-                        Personal Info
+                        <span class="keyword">Personal Info</span>
                     </span>
                     <span>
-                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>   
+                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>
                     </span>
                 </span>
             </a>
@@ -209,10 +225,10 @@
                 <span class="w-100 d-flex justify-content-between">
                     <span class="d-flex align-items-center">
                         <mat-icon class="me-2">attach_money</mat-icon>
-                        Salary
+                        <span class="keyword">Salary</span>
                     </span>
                     <span>
-                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>   
+                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>
                     </span>
                 </span>
             </a>
@@ -221,10 +237,10 @@
                 <span class="w-100 d-flex justify-content-between">
                     <span class="d-flex align-items-center">
                         <mat-icon class="me-2">location_on</mat-icon>
-                        Location
+                        <span class="keyword">Location</span>
                     </span>
                     <span>
-                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>   
+                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>
                     </span>
                 </span>
             </a>
@@ -233,10 +249,10 @@
                 <span class="w-100 d-flex justify-content-between">
                     <span class="d-flex align-items-center">
                         <mat-icon class="me-2">build</mat-icon>
-                        Others
+                        <span class="keyword">Others</span>
                     </span>
                     <span>
-                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>   
+                        <mat-icon class="arrow-right">keyboard_arrow_right</mat-icon>
                     </span>
                 </span>
             </a>
@@ -246,12 +262,12 @@
 </div>
 <div class="row">
     <div class="col-12">
-        <button mat-stroked-button class="apply-filter w-100">Apply Filter</button>  
+        <button mat-stroked-button class="apply-filter w-100">Apply Filter</button>
         <div class="row mt-2">
             <div class="col  d-flex justify-content-center align-items center">
                 <mat-icon class="circle me-2 my-auto">check_circle</mat-icon>
                 <span class="blue">Save this filter</span>
             </div>
-        </div>     
+        </div>
     </div>
 </div>

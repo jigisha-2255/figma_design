@@ -5,6 +5,7 @@
 }
 .circle,.blue{
     color:#1F47F5;
+    font-size:13px;
 }
 #advanced-filter {
     border-right: 1px solid #EBEAED;
@@ -40,6 +41,26 @@
         color: #1F47F5;
     }
 
+    p.filter{
+        font-weight: 500;
+        font-size:14px;
+        color:#25364D;
+    }
+
+    .keyword{
+        font-size:13px;
+        font-weight:500;
+    }
+
+    .contains{
+        color:#84818A;
+        font-size:13px;
+    }
+
+    .mat-menu .mat-icon{
+        color:#84818A;
+    }
+
     .backspace {
         border: 1px solid #1F47F5;
         border-radius: 50%;
@@ -69,6 +90,13 @@
         font-size: 10px;
         width: 12px;
     }
+
+    .mat-menu{
+        line-height: 0px;
+    }
+    .mat-menu .mat-icon-button i, .mat-icon-button .mat-icon {
+        line-height: 14px!important;
+    }
     
     .dropdown-right{
         height:0px;
@@ -89,8 +117,15 @@
     border: 1px solid #1F47F5;
     color: white;
     height: auto;
+    font-size:13px;
     background: #1F47F5;
 }
+// .mat-checkbox-checked:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element, .mat-checkbox:active:not(.mat-checkbox-disabled).mat-accent .mat-ripple-element {
+//     background: #1F47F5 !important;
+// }
+// .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+//     background-color: #1F47F5 !important;
+// }
 
 
 ::ng-deep {
