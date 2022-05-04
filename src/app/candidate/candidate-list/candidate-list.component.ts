@@ -12,4 +12,6 @@ export class CandidateListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  see = false;
 }
+

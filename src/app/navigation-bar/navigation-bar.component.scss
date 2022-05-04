@@ -3,7 +3,7 @@
 // }
 
 .sidenav {
-  width: 90px;
+  width: 60px;
   // min-height:100%;
 }
 
@@ -12,8 +12,8 @@
 }
 
 .mat-toolbar.mat-primary {
-  background:white;
-  color:black;
+  background: white;
+  color: black;
   border-bottom: 1px solid #E3E1E5;
   position: sticky;
   // min-height:100%;
@@ -21,46 +21,58 @@
   z-index: 1;
 }
 
-.mat-toolbar{
+::ng-deep .mat-list-base .mat-list-item .mat-list-item-content,
+.mat-list-base .mat-list-option .mat-list-item-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 7px!important;
+  position: relative;
+  height: inherit;
+}
+
+.mat-toolbar {
   display: flex;
   justify-content: space-between;
 }
 
-.help-icon{
-  margin-top:200px;
+.help-icon {
+  margin-top: 200px;
 }
 
-mat-icon{
-  margin-left:20px;
+mat-icon {
+  margin-left: 20px;
 }
 
-.candidate{
-  margin-left:-100px;
+.candidate {
+  margin-left: -100px;
 }
 
-.hr{
-  margin:10px 10px;
+.hr {
+  margin: 10px 10px;
 }
 
-.ellipse1{
-  margin-right:10px;
-}
-.ellipse2{
-  margin-top:27px;
-  margin-left:13px;
-  z-index:1;
+.ellipse1 {
+  margin-right: 25px;
 }
 
-.mat-card-avatar{
-  height:50px;
-  width:50px;
-  border-radius:50%;
+.ellipse2 {
+  margin-top: 27px;
+  margin-left: 0px;
+  z-index: 1;
 }
 
-@media(max-width:700px){
+.mat-card-avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+@media(max-width:700px) {
   .mat-toolbar.mat-primary {
-    background:white;
-    color:black;
+    background: white;
+    color: black;
     border-bottom: 1px solid #E3E1E5;
     position: fixed;
     top: 0;

@@ -1,6 +1,6 @@
 <div class="row candidate-list">
     <div class="col">
-        <div class="d-flex align-items-center">
+        <div class="d-lg-flex align-items-center d-none">
             <mat-form-field appearance="outline" class="sort-by">
                 <mat-select placeholder="SortBy">
                     <mat-option value="option1">Asc</mat-option>
@@ -12,825 +12,1404 @@
                 <a href="" class="reset">Reset</a>
             </div>
         </div>
-        <div class="my-4 d-flex">
-                <mat-checkbox class="example-margin me-2">2 Selected</mat-checkbox>
+        <div class="my-4 d-none d-lg-flex">
+            <mat-checkbox class="example-margin my-auto me-2">2 Selected</mat-checkbox>
             <mat-form-field appearance="outline" class="bulk-actions">
                 <mat-select placeholder="Bulk Actions">
-                    <mat-option value="option1">Edit</mat-option>
-                    <mat-option value="option2">Delete</mat-option>
+                    <mat-option value="option1">
+                        <mat-icon>share</mat-icon>
+                        Share Profile
+                    </mat-option>
+                    <mat-divider></mat-divider>
+                    <mat-option value="option2">
+                        <img src="../assets/media/tag.png" alt="" class="dropdown-img">
+                        Tags
+                    </mat-option>
+                    <mat-option value="option3">
+                        <img src="../assets/media/communication.png" alt="" class="dropdown-img">
+                        Communication
+                    </mat-option>
+                    <mat-option value="option4">
+                        <img src="../assets/media/shortlist.png" alt="" class="dropdown-img">
+                        Shortlist
+                    </mat-option>
+                    <mat-divider></mat-divider>
+                    <mat-option value="Resume">
+                        <mat-icon>get_app</mat-icon>
+                        Resume Download
+                    </mat-option>
+                    <mat-option value="option6">
+                        <mat-icon>delete</mat-icon>
+                        Delete
+                    </mat-option>
                 </mat-select>
                 <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
             </mat-form-field>
             <mat-chip-list aria-label="Fish selection">
                 <mat-chip>
                     <span class="me-2">whitelist</span>
-                    <mat-icon class="my-auto">close</mat-icon>
+                    <mat-icon class="my-auto close">close</mat-icon>
                 </mat-chip>
                 <mat-chip>
                     <span class="me-2">1km - 25km Nearby</span>
-                    <mat-icon class="my-auto">close</mat-icon>
+                    <mat-icon class="my-auto close">close</mat-icon>
                 </mat-chip>
-              </mat-chip-list>
+            </mat-chip-list>
         </div>
-        <div class="row">
-            <div class="col-5 user_data candidate-list-left" style="border-right:1px solid #E0DFDF;">
-                <div class="row">
-                    <div class="col-1">
-                        <mat-checkbox class="example-margin"></mat-checkbox>
-                    </div>
-                    <div class="col-2 px-0 my-auto">
-                        <div class="row">
-                            <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+        <div>
+            <div class="row user_data mt-4">
+                <div class="col-lg-5 candidate-list-left">
+                    <div class="row">
+                        <div class="col-lg-1 d-none d-lg-flex">
+                            <mat-checkbox class="example-margin" checked></mat-checkbox>
                         </div>
-                        <div class="row">
-                            <p class="profile_match mx-auto">85% Matching</p>
+                        <div class="col-lg-2 px-0 my-auto">
+                            <div class="row d-none d-lg-flex">
+                                <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+                            </div>
+                            <div class="row d-none d-lg-flex">
+                                <p class="profile_match mx-auto">85% Matching</p>
+                            </div>
+                            <div class="row d-lg-none">
+                                <div class="col-3">
+                                    <div class="row">
+                                        <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+                                    </div>
+                                    <div class="row">
+                                        <p class="profile_match mx-auto">85% Matching</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 px-0">
+                                    <small class="user-details">ID UD-1205</small>
+                                    <h2 class="me-2 my-auto">Daniel Jones</h2>
+                                    <span class="user-details">Jr. UI UX Designer at Infosys</span><br />
+                                    <div class="ratings mt-2">
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star_half</mat-icon>
+                                        4.5
+                                    </div>
+                                </div>
+                                <div class="col-3 flex-end">
+                                    <mat-icon class="thumb">thumb_down_alt</mat-icon>
+                                    <mat-icon class="import-export"> import_export</mat-icon>
+                                    <mat-icon>more_vert</mat-icon>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <small class="user-details">ID UD-1205</small>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <h2 class="me-2 my-auto">Daniel Jones</h2>
-                                            </div>
-                                            <div class="col-2 my-auto ratings d-flex">
-                                                <mat-icon class="me-2">star</mat-icon>
-                                                <div>4.3</div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row d-none d-lg-block">
+                                        <div class="col-12">
+                                            <small class="user-details">ID UD-1205</small>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h2 class="me-2 my-auto">Daniel Jones</h2>
+                                                </div>
+                                                <div class="col-2 my-auto ratings d-flex">
+                                                    <mat-icon class="me-2 star">star</mat-icon>
+                                                    <div>4.3</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row my-auto">
-                                    <div class="col">
-                                        <span class="user-details">Jr. UI UX Designer at Infosys</span>
+                                    <div class="row  d-none d-lg-block my-auto">
+                                        <div class="col">
+                                            <span class="user-details">Jr. UI UX Designer at Infosys</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col d-flex">
-                                        <div>
-                                            <img src="../assets/media/robot.svg" alt="" class="me-1">
-                                        </div>
-                                        <div>
-                                            <span class="my-auto light">Engaged By</span> Erika via Whatsapp
-                                        </div>
 
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col d-flex">
-                                        <div class="me-3 my-auto d-flex">
-                                            <div class="my-auto">
-                                                <mat-icon class="user-mat-icon">phone</mat-icon>
+                                    <div class="row mt-2">
+                                        <div class="col d-flex">
+                                            <div>
+                                                <img src="../assets/media/robot.svg" alt="" class="me-1">
                                             </div>
-                                            <span class="">(+91) 9857 857 125</span>
-                                        </div>
-                                        <div class="me-3">
-                                            <mat-icon class="user-mat-icon">email</mat-icon>
-                                            <span class="my-auto">danielj@gmail.com</span>
+                                            <div>
+                                                <span class="my-auto light">Engaged By</span> Erika via Whatsapp
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <mat-icon class="user-mat-icon">location_on</mat-icon>
-                                        <span class="light">Current Location</span> Delhi <img
-                                            src="../assets/media/blue-dots.png" alt="">
+                                    <div class="row mt-2">
+                                        <div class="col d-flex">
+                                            <div class="me-3 my-auto d-flex">
+                                                <div class="my-auto">
+                                                    <mat-icon class="user-mat-icon">phone</mat-icon>
+                                                </div>
+                                                <span class="">(+91) 9857 857 125</span>
+                                            </div>
+                                            <div class="me-3">
+                                                <mat-icon class="user-mat-icon">email</mat-icon>
+                                                <span class="my-auto">daniel@gmail.com</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col" fxLayout="row">
-                                        <div>
-                                            <i class="fa fa-plus icon-plus my-auto"></i>
+                                    <div class="row mt-2">
+                                        <div class="col">
+                                            <mat-icon class="user-mat-icon">location_on</mat-icon>
+                                            <span class="light">Current Location</span> Delhi <img
+                                                src="../assets/media/blue-dots.png" alt="">
                                         </div>
-                                        <div class="vector-phone mx-2">
-                                            <img src="../assets/media/vector.png" alt="vector">
-                                            <span class="mx-2">Phone</span>|
-                                        </div>
-                                        <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
-                                                alt="vector"><span class="mx-2">Whitelist</span><i
-                                                class="fa fa-times-circle-o icon-cross"></i>
-                                        </div>
-                                        <div>
-                                            <span class="vector-number my-auto">+1</span>
+                                    </div>
+                                    <div class="row mt-3 d-none d-lg-block">
+                                        <div class="col d-flex">
+                                            <div>
+                                                <i class="fa fa-plus icon-plus my-auto"></i>
+                                            </div>
+                                            <div class="vector-phone mx-2">
+                                                <img src="../assets/media/vector.png" alt="vector">
+                                                <span class="mx-2">Phone</span>|
+                                            </div>
+                                            <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
+                                                    alt="vector"><span class="mx-2">Whitelist</span><i
+                                                    class="fa fa-times-circle-o icon-cross"></i>
+                                            </div>
+                                            <div>
+                                                <span class="vector-number my-auto">+1</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-7 user_data">
-                <div class="row">
-                    <div class="col-11 candidate-details">
-                        <div>
-                            <button mat-stroked-button class="screening mt-2 mt-lg-0 me-2">Screening</button>
-                            <button mat-stroked-button class="not-applicable mt-2 mt-lg-0 me-2">Consent Not
-                                applicant</button>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/skills.png" alt="">
+                <div class="col-lg-7">
+                    <div class="row see-less-more" [class.seeFirst]="see">
+                        <div class="col-11 candidate-details">
+                            <div class="d-none d-lg-block">
+                                <button mat-stroked-button class="screening mt-2 mt-lg-0 me-2">Screening</button>
+                                <button mat-stroked-button class="not-applicable mt-2 mt-lg-0 me-2">Consent Not
+                                    applicant</button>
                             </div>
-                            <div>
-                                <span class="light">skillset <img src="../assets/media/blue-dots.png" alt=""></span>
-                                <br />Excel • FCC • PPM • Apt • Spring • Ring • Spin • root cause analysis • TPM • Rust
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/skills.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">skillset <img src="../assets/media/blue-dots.png" alt=""></span>
+                                    <br />Excel • FCC • PPM • Apt • Spring • Ring • Spin • root cause analysis • TPM •
+                                    Rust
+
+                                </div>
 
                             </div>
-
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/experience.png" alt="">
+                                </div>
+                                <div class="me-5">
+                                    <span class="light">Experiance</span> 3 years 10 month
+                                </div>
+                                <div class="me-2">
+                                    <img src="../assets/media/designation.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Designation</span> IT
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/salary.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Salary</span> 50K $Annually
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/notice-period.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Notice Period</span> 30Days
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <p><span class="light">Added by</span> You via Monster Inc.<span class="light">on</span>
+                                    14
+                                    Sep 2021</p>
+                                <p><span class="light">Resume was last edited by</span> candidate <span
+                                        class="light">on</span> 30 Oct 2017</p>
+                            </div>
+                            <div class="row mt-3 d-block d-lg-none">
+                                <div class="col d-flex">
+                                    <div>
+                                        <i class="fa fa-plus icon-plus my-auto"></i>
+                                    </div>
+                                    <div class="vector-phone mx-2">
+                                        <img src="../assets/media/vector.png" alt="vector">
+                                        <span class="mx-2">Phone</span>|
+                                    </div>
+                                    <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
+                                            alt="vector"><span class="mx-2">Whitelist</span><i
+                                            class="fa fa-times-circle-o icon-cross"></i>
+                                    </div>
+                                    <div>
+                                        <span class="vector-number my-auto">+1</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/experience.png" alt="">
-                            </div>
-                            <div class="me-5">
-                                <span class="light">Experiance</span> 3 years 10 month
-                            </div>
-                            <div class="me-2">
-                                <img src="../assets/media/designation.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Designation</span> IT
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/salary.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Salary</span> 50K $Annually
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/notice-period.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Notice Period</span> 30Days
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <p><span class="light">Added by</span> You via Monster Inc.<span class="light">on</span> 14
-                                Sep 2021</p>
-                            <p><span class="light">Resume was last edited by</span> candidate <span
-                                    class="light">on</span> 30 Oct 2017</p>
+                        <div class="col-1 candidate-list-right text-center d-none d-lg-block">
+                            <button class="mat-menu" mat-icon-button [matMenuTriggerFor]="menu"
+                                aria-label="Example icon-button with a menu">
+                                <mat-icon class="more_vert">more_vert</mat-icon>
+                            </button>
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item>
+                                    <mat-icon>edit</mat-icon>
+                                    <span>Edit</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>local_offer</mat-icon>
+                                    <span>Tags</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>local_activity</mat-icon>
+                                    <span>Activity</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon> phone</mat-icon>
+                                    <span>Communication</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>assignment_turned_in</mat-icon>
+                                    <span>Shortlist</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>delete</mat-icon>
+                                    <span>Delete</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>note_add</mat-icon>
+                                    <span>Notes</span>
+                                </button>
+                            </mat-menu>
+                            <mat-icon>remove_red_eye</mat-icon>
+                            <mat-icon>person_add_disabled</mat-icon>
+                            <mat-icon>share</mat-icon>
+                            <mat-icon>get_app</mat-icon>
+                            <mat-icon class="thumb">thumb_down_alt</mat-icon>
+                            <mat-icon class="import-export"> import_export</mat-icon>
                         </div>
                     </div>
-                    <div class="col-1 pe-0 candidate-list-right">
-                        <mat-icon>more_vert</mat-icon>
-                        <mat-icon>remove_red_eye</mat-icon>
-                        <mat-icon>person_add</mat-icon>
-                        <mat-icon>share</mat-icon>
-                        <mat-icon> vertical_align_bottom</mat-icon>
-                        <mat-icon class="thumb">thumb_down_alt</mat-icon>
-                        <mat-icon class="import-export"> import_export</mat-icon>
+                    <div class="mb-2 d-flex d-lg-none align-items-center justify-content-center">
+                        <a class="blue" (click)="see = !see">{{ see ? 'See less': 'See More' }}
+                            <mat-icon style="height:16px; width:16px; font-size:16px; margin-top:10px;">
+                                {{see ? 'expand_less' : 'expand_more'}}</mat-icon>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="col responsive-candidate-list d-lg-none">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="row">
+                                <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+                            </div>
+                            <div class="row">
+                                <p class="profile_match mx-auto">85% Matching</p>
+                            </div>
+                        </div>
+                        <div class="col-6 px-0">
+                            <small class="user-details">ID UD-1205</small>
+                            <h2 class="me-2 my-auto">Daniel Jones</h2>
+                            <span class="user-details">Jr. UI UX Designer at Infosys</span><br />
+                            <div class="ratings mt-2">
+                                <mat-icon class="me-2 star">star</mat-icon>
+                                <mat-icon class="me-2 star">star</mat-icon>
+                                <mat-icon class="me-2 star">star</mat-icon>
+                                <mat-icon class="me-2 star">star</mat-icon>
+                                <mat-icon class="me-2 star">star_half</mat-icon>
+                                4.5
+                            </div>
+                        </div>
+                        <div class="col-3 px-0 flex-end">
+                            <mat-icon class="thumb">thumb_down_alt</mat-icon>
+                            <mat-icon class="import-export"> import_export</mat-icon>
+                            <mat-icon>more_vert</mat-icon>
+                        </div>
+                    </div>
+                    <div class="row see-less-more" [class.seeFirst]="see">
+                        <div class="col">
+                            <div class="col d-flex mt-2">
+                                <div>
+                                    <img src="../assets/media/robot.svg" alt="" class="me-1">
+                                </div>
+                                <div>
+                                    <span class="my-auto light">Engaged By Erika via Whatsapp</span>
+                                </div>
+                            </div>
+                            <div class="me-3 my-auto d-flex light mt-2">
+                                <div class="my-auto me-3">
+                                    <mat-icon class="user-mat-icon">phone</mat-icon>
+                                    <span class="">(+91) 9857 857 125</span>
+                                </div>
+                                <div>
+                                    <mat-icon class="user-mat-icon">email</mat-icon>
+                                    <span class="my-auto">daniel@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <mat-icon class="user-mat-icon">location_on</mat-icon>
+                                <span class="light">Current Location - Delhi, India</span><img
+                                    src="../assets/media/blue-dots.png" alt="">
+                            </div>
+                            <div class="d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="../assets/media/skills-light.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">skillset <img src="../assets/media/blue-dots.png" alt="">
+                                        <br />Excel • FCC • PPM • Apt • Spring • Ring • Spin • root cause analysis • TPM
+                                        •
+                                        Rust</span>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="../assets/media/experience-light.png" alt="">
+                                </div>
+                                <div class="me-5">
+                                    <span class="light">Experiance 3 years 10 month</span>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="../assets/media/designation.png" alt="">
+                                </div>
+                                <div class="me-2">
+                                    <span class="light">Designation IT</span>
+                                </div>
+                                <div class="me-2">
+                                    <img src="../assets/media/salary-light.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Salary 50K $Annually</span>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-2">
+                                <div class="me-2">
+                                    <img src="../assets/media/notice-period-light.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Notice Period 30Days</span>
+                                </div>
+                            </div>
+                            <div class="light mt-2">Added by You via Monster Inc. on 14 Sep 2021</div>
+                            <div class="light mt-2">Resume was last edited by candidate on 30 Oct 2017</div>
+                        </div>
+                    </div>
+                    <div class="mt-2 d-flex align-items-center justify-content-center">
+                        <a class="blue" (click)="see = !see">{{ see ? 'See less': 'See More' }}<mat-icon
+                                style="height:16px; width:16px; font-size:16px; margin-top:10px;">{{see ? 'expand_less'
+                                : 'expand_more'}}</mat-icon></a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="row user_data mt-4">
+                <div class="col-lg-5 candidate-list-left">
+                    <div class="row">
+                        <div class="col-lg-1 d-none d-lg-flex">
+                            <mat-checkbox class="example-margin" checked></mat-checkbox>
+                        </div>
+                        <div class="col-lg-2 px-0 my-auto">
+                            <div class="row d-none d-lg-flex">
+                                <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+                            </div>
+                            <div class="row d-none d-lg-flex">
+                                <p class="profile_match mx-auto">85% Matching</p>
+                            </div>
+                            <div class="row d-lg-none">
+                                <div class="col-3">
+                                    <div class="row">
+                                        <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+                                    </div>
+                                    <div class="row">
+                                        <p class="profile_match mx-auto">85% Matching</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 px-0">
+                                    <small class="user-details">ID UD-1205</small>
+                                    <h2 class="me-2 my-auto">Daniel Jones</h2>
+                                    <span class="user-details">Jr. UI UX Designer at Infosys</span><br />
+                                    <div class="ratings mt-2">
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star_half</mat-icon>
+                                        4.5
+                                    </div>
+                                </div>
+                                <div class="col-3 flex-end">
+                                    <mat-icon class="thumb">thumb_down_alt</mat-icon>
+                                    <mat-icon class="import-export"> import_export</mat-icon>
+                                    <mat-icon>more_vert</mat-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row d-none d-lg-block">
+                                        <div class="col-12">
+                                            <small class="user-details">ID UD-1205</small>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h2 class="me-2 my-auto">Daniel Jones</h2>
+                                                </div>
+                                                <div class="col-2 my-auto ratings d-flex">
+                                                    <mat-icon class="me-2 star">star</mat-icon>
+                                                    <div>4.3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row  d-none d-lg-block my-auto">
+                                        <div class="col">
+                                            <span class="user-details">Jr. UI UX Designer at Infosys</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="col d-flex">
+                                            <div>
+                                                <img src="../assets/media/robot.svg" alt="" class="me-1">
+                                            </div>
+                                            <div>
+                                                <span class="my-auto light">Engaged By</span> Erika via Whatsapp
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col d-flex">
+                                            <div class="me-3 my-auto d-flex">
+                                                <div class="my-auto">
+                                                    <mat-icon class="user-mat-icon">phone</mat-icon>
+                                                </div>
+                                                <span class="">(+91) 9857 857 125</span>
+                                            </div>
+                                            <div class="me-3">
+                                                <mat-icon class="user-mat-icon">email</mat-icon>
+                                                <span class="my-auto">daniel@gmail.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col">
+                                            <mat-icon class="user-mat-icon">location_on</mat-icon>
+                                            <span class="light">Current Location</span> Delhi <img
+                                                src="../assets/media/blue-dots.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 d-none d-lg-block">
+                                        <div class="col d-flex">
+                                            <div>
+                                                <i class="fa fa-plus icon-plus my-auto"></i>
+                                            </div>
+                                            <div class="vector-phone mx-2">
+                                                <img src="../assets/media/vector.png" alt="vector">
+                                                <span class="mx-2">Phone</span>|
+                                            </div>
+                                            <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
+                                                    alt="vector"><span class="mx-2">Whitelist</span><i
+                                                    class="fa fa-times-circle-o icon-cross"></i>
+                                            </div>
+                                            <div>
+                                                <span class="vector-number my-auto">+1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row see-less-more" [class.seeFirst]="see">
+                        <div class="col-11 candidate-details">
+                            <div class="d-none d-lg-block">
+                                <button mat-stroked-button class="screening mt-2 mt-lg-0 me-2">Screening</button>
+                                <button mat-stroked-button class="not-applicable mt-2 mt-lg-0 me-2">Consent Not
+                                    applicant</button>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/skills.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">skillset <img src="../assets/media/blue-dots.png" alt=""></span>
+                                    <br />Excel • FCC • PPM • Apt • Spring • Ring • Spin • root cause analysis • TPM •
+                                    Rust
+
+                                </div>
+
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/experience.png" alt="">
+                                </div>
+                                <div class="me-5">
+                                    <span class="light">Experiance</span> 3 years 10 month
+                                </div>
+                                <div class="me-2">
+                                    <img src="../assets/media/designation.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Designation</span> IT
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/salary.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Salary</span> 50K $Annually
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/notice-period.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Notice Period</span> 30Days
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <p><span class="light">Added by</span> You via Monster Inc.<span class="light">on</span>
+                                    14
+                                    Sep 2021</p>
+                                <p><span class="light">Resume was last edited by</span> candidate <span
+                                        class="light">on</span> 30 Oct 2017</p>
+                            </div>
+                            <div class="row mt-3 d-block d-lg-none">
+                                <div class="col d-flex">
+                                    <div>
+                                        <i class="fa fa-plus icon-plus my-auto"></i>
+                                    </div>
+                                    <div class="vector-phone mx-2">
+                                        <img src="../assets/media/vector.png" alt="vector">
+                                        <span class="mx-2">Phone</span>|
+                                    </div>
+                                    <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
+                                            alt="vector"><span class="mx-2">Whitelist</span><i
+                                            class="fa fa-times-circle-o icon-cross"></i>
+                                    </div>
+                                    <div>
+                                        <span class="vector-number my-auto">+1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 candidate-list-right text-center d-none d-lg-block">
+                            <button class="mat-menu" mat-icon-button [matMenuTriggerFor]="menu"
+                                aria-label="Example icon-button with a menu">
+                                <mat-icon class="more_vert">more_vert</mat-icon>
+                            </button>
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item>
+                                    <mat-icon>edit</mat-icon>
+                                    <span>Edit</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>local_offer</mat-icon>
+                                    <span>Tags</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>local_activity</mat-icon>
+                                    <span>Activity</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon> phone</mat-icon>
+                                    <span>Communication</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>assignment_turned_in</mat-icon>
+                                    <span>Shortlist</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>delete</mat-icon>
+                                    <span>Delete</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>note_add</mat-icon>
+                                    <span>Notes</span>
+                                </button>
+                            </mat-menu>
+                            <mat-icon>remove_red_eye</mat-icon>
+                            <mat-icon>person_add_disabled</mat-icon>
+                            <mat-icon>share</mat-icon>
+                            <mat-icon>get_app</mat-icon>
+                            <mat-icon class="thumb">thumb_down_alt</mat-icon>
+                            <mat-icon class="import-export"> import_export</mat-icon>
+                        </div>
+                    </div>
+                    <div class="mb-2 d-flex d-lg-none align-items-center justify-content-center">
+                        <a class="blue" (click)="see = !see">{{ see ? 'See less': 'See More' }}
+                            <mat-icon style="height:16px; width:16px; font-size:16px; margin-top:10px;">
+                                {{see ? 'expand_less' : 'expand_more'}}</mat-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row user_data mt-4">
+                <div class="col-lg-5 candidate-list-left">
+                    <div class="row">
+                        <div class="col-lg-1 d-none d-lg-flex">
+                            <mat-checkbox class="example-margin" checked></mat-checkbox>
+                        </div>
+                        <div class="col-lg-2 px-0 my-auto">
+                            <div class="row d-none d-lg-flex">
+                                <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+                            </div>
+                            <div class="row d-none d-lg-flex">
+                                <p class="profile_match mx-auto">85% Matching</p>
+                            </div>
+                            <div class="row d-lg-none">
+                                <div class="col-3">
+                                    <div class="row">
+                                        <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+                                    </div>
+                                    <div class="row">
+                                        <p class="profile_match mx-auto">85% Matching</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 px-0">
+                                    <small class="user-details">ID UD-1205</small>
+                                    <h2 class="me-2 my-auto">Daniel Jones</h2>
+                                    <span class="user-details">Jr. UI UX Designer at Infosys</span><br />
+                                    <div class="ratings mt-2">
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star_half</mat-icon>
+                                        4.5
+                                    </div>
+                                </div>
+                                <div class="col-3 flex-end">
+                                    <mat-icon class="thumb">thumb_down_alt</mat-icon>
+                                    <mat-icon class="import-export"> import_export</mat-icon>
+                                    <mat-icon>more_vert</mat-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row d-none d-lg-block">
+                                        <div class="col-12">
+                                            <small class="user-details">ID UD-1205</small>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h2 class="me-2 my-auto">Daniel Jones</h2>
+                                                </div>
+                                                <div class="col-2 my-auto ratings d-flex">
+                                                    <mat-icon class="me-2 star">star</mat-icon>
+                                                    <div>4.3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row  d-none d-lg-block my-auto">
+                                        <div class="col">
+                                            <span class="user-details">Jr. UI UX Designer at Infosys</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="col d-flex">
+                                            <div>
+                                                <img src="../assets/media/robot.svg" alt="" class="me-1">
+                                            </div>
+                                            <div>
+                                                <span class="my-auto light">Engaged By</span> Erika via Whatsapp
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col d-flex">
+                                            <div class="me-3 my-auto d-flex">
+                                                <div class="my-auto">
+                                                    <mat-icon class="user-mat-icon">phone</mat-icon>
+                                                </div>
+                                                <span class="">(+91) 9857 857 125</span>
+                                            </div>
+                                            <div class="me-3">
+                                                <mat-icon class="user-mat-icon">email</mat-icon>
+                                                <span class="my-auto">daniel@gmail.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col">
+                                            <mat-icon class="user-mat-icon">location_on</mat-icon>
+                                            <span class="light">Current Location</span> Delhi <img
+                                                src="../assets/media/blue-dots.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 d-none d-lg-block">
+                                        <div class="col d-flex">
+                                            <div>
+                                                <i class="fa fa-plus icon-plus my-auto"></i>
+                                            </div>
+                                            <div class="vector-phone mx-2">
+                                                <img src="../assets/media/vector.png" alt="vector">
+                                                <span class="mx-2">Phone</span>|
+                                            </div>
+                                            <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
+                                                    alt="vector"><span class="mx-2">Whitelist</span><i
+                                                    class="fa fa-times-circle-o icon-cross"></i>
+                                            </div>
+                                            <div>
+                                                <span class="vector-number my-auto">+1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row see-less-more" [class.seeFirst]="see">
+                        <div class="col-11 candidate-details">
+                            <div class="d-none d-lg-block">
+                                <button mat-stroked-button class="screening mt-2 mt-lg-0 me-2">Screening</button>
+                                <button mat-stroked-button class="not-applicable mt-2 mt-lg-0 me-2">Consent Not
+                                    applicant</button>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/skills.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">skillset <img src="../assets/media/blue-dots.png" alt=""></span>
+                                    <br />Excel • FCC • PPM • Apt • Spring • Ring • Spin • root cause analysis • TPM •
+                                    Rust
+
+                                </div>
+
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/experience.png" alt="">
+                                </div>
+                                <div class="me-5">
+                                    <span class="light">Experiance</span> 3 years 10 month
+                                </div>
+                                <div class="me-2">
+                                    <img src="../assets/media/designation.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Designation</span> IT
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/salary.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Salary</span> 50K $Annually
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/notice-period.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Notice Period</span> 30Days
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <p><span class="light">Added by</span> You via Monster Inc.<span class="light">on</span>
+                                    14
+                                    Sep 2021</p>
+                                <p><span class="light">Resume was last edited by</span> candidate <span
+                                        class="light">on</span> 30 Oct 2017</p>
+                            </div>
+                            <div class="row mt-3 d-block d-lg-none">
+                                <div class="col d-flex">
+                                    <div>
+                                        <i class="fa fa-plus icon-plus my-auto"></i>
+                                    </div>
+                                    <div class="vector-phone mx-2">
+                                        <img src="../assets/media/vector.png" alt="vector">
+                                        <span class="mx-2">Phone</span>|
+                                    </div>
+                                    <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
+                                            alt="vector"><span class="mx-2">Whitelist</span><i
+                                            class="fa fa-times-circle-o icon-cross"></i>
+                                    </div>
+                                    <div>
+                                        <span class="vector-number my-auto">+1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 candidate-list-right text-center d-none d-lg-block">
+                            <button class="mat-menu" mat-icon-button [matMenuTriggerFor]="menu"
+                                aria-label="Example icon-button with a menu">
+                                <mat-icon class="more_vert">more_vert</mat-icon>
+                            </button>
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item>
+                                    <mat-icon>edit</mat-icon>
+                                    <span>Edit</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>local_offer</mat-icon>
+                                    <span>Tags</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>local_activity</mat-icon>
+                                    <span>Activity</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon> phone</mat-icon>
+                                    <span>Communication</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>assignment_turned_in</mat-icon>
+                                    <span>Shortlist</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>delete</mat-icon>
+                                    <span>Delete</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>note_add</mat-icon>
+                                    <span>Notes</span>
+                                </button>
+                            </mat-menu>
+                            <mat-icon>remove_red_eye</mat-icon>
+                            <mat-icon>person_add_disabled</mat-icon>
+                            <mat-icon>share</mat-icon>
+                            <mat-icon>get_app</mat-icon>
+                            <mat-icon class="thumb">thumb_down_alt</mat-icon>
+                            <mat-icon class="import-export"> import_export</mat-icon>
+                        </div>
+                    </div>
+                    <div class="mb-2 d-flex d-lg-none align-items-center justify-content-center">
+                        <a class="blue" (click)="see = !see">{{ see ? 'See less': 'See More' }}
+                            <mat-icon style="height:16px; width:16px; font-size:16px; margin-top:10px;">
+                                {{see ? 'expand_less' : 'expand_more'}}</mat-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+             <div class="row user_data mt-4">
+                <div class="col-lg-5 candidate-list-left">
+                    <div class="row">
+                        <div class="col-lg-1 d-none d-lg-flex">
+                            <mat-checkbox class="example-margin" checked></mat-checkbox>
+                        </div>
+                        <div class="col-lg-2 px-0 my-auto">
+                            <div class="row d-none d-lg-flex">
+                                <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+                            </div>
+                            <div class="row d-none d-lg-flex">
+                                <p class="profile_match mx-auto">85% Matching</p>
+                            </div>
+                            <div class="row d-lg-none">
+                                <div class="col-3">
+                                    <div class="row">
+                                        <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+                                    </div>
+                                    <div class="row">
+                                        <p class="profile_match mx-auto">85% Matching</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 px-0">
+                                    <small class="user-details">ID UD-1205</small>
+                                    <h2 class="me-2 my-auto">Daniel Jones</h2>
+                                    <span class="user-details">Jr. UI UX Designer at Infosys</span><br />
+                                    <div class="ratings mt-2">
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star_half</mat-icon>
+                                        4.5
+                                    </div>
+                                </div>
+                                <div class="col-3 flex-end">
+                                    <mat-icon class="thumb">thumb_down_alt</mat-icon>
+                                    <mat-icon class="import-export"> import_export</mat-icon>
+                                    <mat-icon>more_vert</mat-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row d-none d-lg-block">
+                                        <div class="col-12">
+                                            <small class="user-details">ID UD-1205</small>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h2 class="me-2 my-auto">Daniel Jones</h2>
+                                                </div>
+                                                <div class="col-2 my-auto ratings d-flex">
+                                                    <mat-icon class="me-2 star">star</mat-icon>
+                                                    <div>4.3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row  d-none d-lg-block my-auto">
+                                        <div class="col">
+                                            <span class="user-details">Jr. UI UX Designer at Infosys</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="col d-flex">
+                                            <div>
+                                                <img src="../assets/media/robot.svg" alt="" class="me-1">
+                                            </div>
+                                            <div>
+                                                <span class="my-auto light">Engaged By</span> Erika via Whatsapp
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col d-flex">
+                                            <div class="me-3 my-auto d-flex">
+                                                <div class="my-auto">
+                                                    <mat-icon class="user-mat-icon">phone</mat-icon>
+                                                </div>
+                                                <span class="">(+91) 9857 857 125</span>
+                                            </div>
+                                            <div class="me-3">
+                                                <mat-icon class="user-mat-icon">email</mat-icon>
+                                                <span class="my-auto">daniel@gmail.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col">
+                                            <mat-icon class="user-mat-icon">location_on</mat-icon>
+                                            <span class="light">Current Location</span> Delhi <img
+                                                src="../assets/media/blue-dots.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 d-none d-lg-block">
+                                        <div class="col d-flex">
+                                            <div>
+                                                <i class="fa fa-plus icon-plus my-auto"></i>
+                                            </div>
+                                            <div class="vector-phone mx-2">
+                                                <img src="../assets/media/vector.png" alt="vector">
+                                                <span class="mx-2">Phone</span>|
+                                            </div>
+                                            <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
+                                                    alt="vector"><span class="mx-2">Whitelist</span><i
+                                                    class="fa fa-times-circle-o icon-cross"></i>
+                                            </div>
+                                            <div>
+                                                <span class="vector-number my-auto">+1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row see-less-more" [class.seeFirst]="see">
+                        <div class="col-11 candidate-details">
+                            <div class="d-none d-lg-block">
+                                <button mat-stroked-button class="screening mt-2 mt-lg-0 me-2">Screening</button>
+                                <button mat-stroked-button class="not-applicable mt-2 mt-lg-0 me-2">Consent Not
+                                    applicant</button>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/skills.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">skillset <img src="../assets/media/blue-dots.png" alt=""></span>
+                                    <br />Excel • FCC • PPM • Apt • Spring • Ring • Spin • root cause analysis • TPM •
+                                    Rust
+
+                                </div>
+
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/experience.png" alt="">
+                                </div>
+                                <div class="me-5">
+                                    <span class="light">Experiance</span> 3 years 10 month
+                                </div>
+                                <div class="me-2">
+                                    <img src="../assets/media/designation.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Designation</span> IT
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/salary.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Salary</span> 50K $Annually
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/notice-period.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Notice Period</span> 30Days
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <p><span class="light">Added by</span> You via Monster Inc.<span class="light">on</span>
+                                    14
+                                    Sep 2021</p>
+                                <p><span class="light">Resume was last edited by</span> candidate <span
+                                        class="light">on</span> 30 Oct 2017</p>
+                            </div>
+                            <div class="row mt-3 d-block d-lg-none">
+                                <div class="col d-flex">
+                                    <div>
+                                        <i class="fa fa-plus icon-plus my-auto"></i>
+                                    </div>
+                                    <div class="vector-phone mx-2">
+                                        <img src="../assets/media/vector.png" alt="vector">
+                                        <span class="mx-2">Phone</span>|
+                                    </div>
+                                    <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
+                                            alt="vector"><span class="mx-2">Whitelist</span><i
+                                            class="fa fa-times-circle-o icon-cross"></i>
+                                    </div>
+                                    <div>
+                                        <span class="vector-number my-auto">+1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 candidate-list-right text-center d-none d-lg-block">
+                            <button class="mat-menu" mat-icon-button [matMenuTriggerFor]="menu"
+                                aria-label="Example icon-button with a menu">
+                                <mat-icon class="more_vert">more_vert</mat-icon>
+                            </button>
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item>
+                                    <mat-icon>edit</mat-icon>
+                                    <span>Edit</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>local_offer</mat-icon>
+                                    <span>Tags</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>local_activity</mat-icon>
+                                    <span>Activity</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon> phone</mat-icon>
+                                    <span>Communication</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>assignment_turned_in</mat-icon>
+                                    <span>Shortlist</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>delete</mat-icon>
+                                    <span>Delete</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>note_add</mat-icon>
+                                    <span>Notes</span>
+                                </button>
+                            </mat-menu>
+                            <mat-icon>remove_red_eye</mat-icon>
+                            <mat-icon>person_add_disabled</mat-icon>
+                            <mat-icon>share</mat-icon>
+                            <mat-icon>get_app</mat-icon>
+                            <mat-icon class="thumb">thumb_down_alt</mat-icon>
+                            <mat-icon class="import-export"> import_export</mat-icon>
+                        </div>
+                    </div>
+                    <div class="mb-2 d-flex d-lg-none align-items-center justify-content-center">
+                        <a class="blue" (click)="see = !see">{{ see ? 'See less': 'See More' }}
+                            <mat-icon style="height:16px; width:16px; font-size:16px; margin-top:10px;">
+                                {{see ? 'expand_less' : 'expand_more'}}</mat-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row user_data mt-4">
+                <div class="col-lg-5 candidate-list-left">
+                    <div class="row">
+                        <div class="col-lg-1 d-none d-lg-flex">
+                            <mat-checkbox class="example-margin" checked></mat-checkbox>
+                        </div>
+                        <div class="col-lg-2 px-0 my-auto">
+                            <div class="row d-none d-lg-flex">
+                                <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+                            </div>
+                            <div class="row d-none d-lg-flex">
+                                <p class="profile_match mx-auto">85% Matching</p>
+                            </div>
+                            <div class="row d-lg-none">
+                                <div class="col-3">
+                                    <div class="row">
+                                        <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
+                                    </div>
+                                    <div class="row">
+                                        <p class="profile_match mx-auto">85% Matching</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 px-0">
+                                    <small class="user-details">ID UD-1205</small>
+                                    <h2 class="me-2 my-auto">Daniel Jones</h2>
+                                    <span class="user-details">Jr. UI UX Designer at Infosys</span><br />
+                                    <div class="ratings mt-2">
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star</mat-icon>
+                                        <mat-icon class="me-2 star">star_half</mat-icon>
+                                        4.5
+                                    </div>
+                                </div>
+                                <div class="col-3 flex-end">
+                                    <mat-icon class="thumb">thumb_down_alt</mat-icon>
+                                    <mat-icon class="import-export"> import_export</mat-icon>
+                                    <mat-icon>more_vert</mat-icon>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row d-none d-lg-block">
+                                        <div class="col-12">
+                                            <small class="user-details">ID UD-1205</small>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h2 class="me-2 my-auto">Daniel Jones</h2>
+                                                </div>
+                                                <div class="col-2 my-auto ratings d-flex">
+                                                    <mat-icon class="me-2 star">star</mat-icon>
+                                                    <div>4.3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row  d-none d-lg-block my-auto">
+                                        <div class="col">
+                                            <span class="user-details">Jr. UI UX Designer at Infosys</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="col d-flex">
+                                            <div>
+                                                <img src="../assets/media/robot.svg" alt="" class="me-1">
+                                            </div>
+                                            <div>
+                                                <span class="my-auto light">Engaged By</span> Erika via Whatsapp
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col d-flex">
+                                            <div class="me-3 my-auto d-flex">
+                                                <div class="my-auto">
+                                                    <mat-icon class="user-mat-icon">phone</mat-icon>
+                                                </div>
+                                                <span class="">(+91) 9857 857 125</span>
+                                            </div>
+                                            <div class="me-3">
+                                                <mat-icon class="user-mat-icon">email</mat-icon>
+                                                <span class="my-auto">daniel@gmail.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col">
+                                            <mat-icon class="user-mat-icon">location_on</mat-icon>
+                                            <span class="light">Current Location</span> Delhi <img
+                                                src="../assets/media/blue-dots.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 d-none d-lg-block">
+                                        <div class="col d-flex">
+                                            <div>
+                                                <i class="fa fa-plus icon-plus my-auto"></i>
+                                            </div>
+                                            <div class="vector-phone mx-2">
+                                                <img src="../assets/media/vector.png" alt="vector">
+                                                <span class="mx-2">Phone</span>|
+                                            </div>
+                                            <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
+                                                    alt="vector"><span class="mx-2">Whitelist</span><i
+                                                    class="fa fa-times-circle-o icon-cross"></i>
+                                            </div>
+                                            <div>
+                                                <span class="vector-number my-auto">+1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row see-less-more" [class.seeFirst]="see">
+                        <div class="col-11 candidate-details">
+                            <div class="d-none d-lg-block">
+                                <button mat-stroked-button class="screening mt-2 mt-lg-0 me-2">Screening</button>
+                                <button mat-stroked-button class="not-applicable mt-2 mt-lg-0 me-2">Consent Not
+                                    applicant</button>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/skills.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">skillset <img src="../assets/media/blue-dots.png" alt=""></span>
+                                    <br />Excel • FCC • PPM • Apt • Spring • Ring • Spin • root cause analysis • TPM •
+                                    Rust
+
+                                </div>
+
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/experience.png" alt="">
+                                </div>
+                                <div class="me-5">
+                                    <span class="light">Experiance</span> 3 years 10 month
+                                </div>
+                                <div class="me-2">
+                                    <img src="../assets/media/designation.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Designation</span> IT
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/salary.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Salary</span> 50K $Annually
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <div class="me-2">
+                                    <img src="../assets/media/notice-period.png" alt="">
+                                </div>
+                                <div>
+                                    <span class="light">Notice Period</span> 30Days
+                                </div>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <p><span class="light">Added by</span> You via Monster Inc.<span class="light">on</span>
+                                    14
+                                    Sep 2021</p>
+                                <p><span class="light">Resume was last edited by</span> candidate <span
+                                        class="light">on</span> 30 Oct 2017</p>
+                            </div>
+                            <div class="row mt-3 d-block d-lg-none">
+                                <div class="col d-flex">
+                                    <div>
+                                        <i class="fa fa-plus icon-plus my-auto"></i>
+                                    </div>
+                                    <div class="vector-phone mx-2">
+                                        <img src="../assets/media/vector.png" alt="vector">
+                                        <span class="mx-2">Phone</span>|
+                                    </div>
+                                    <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
+                                            alt="vector"><span class="mx-2">Whitelist</span><i
+                                            class="fa fa-times-circle-o icon-cross"></i>
+                                    </div>
+                                    <div>
+                                        <span class="vector-number my-auto">+1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 candidate-list-right text-center d-none d-lg-block">
+                            <button class="mat-menu" mat-icon-button [matMenuTriggerFor]="menu"
+                                aria-label="Example icon-button with a menu">
+                                <mat-icon class="more_vert">more_vert</mat-icon>
+                            </button>
+                            <mat-menu #menu="matMenu">
+                                <button mat-menu-item>
+                                    <mat-icon>edit</mat-icon>
+                                    <span>Edit</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>local_offer</mat-icon>
+                                    <span>Tags</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>local_activity</mat-icon>
+                                    <span>Activity</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon> phone</mat-icon>
+                                    <span>Communication</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>assignment_turned_in</mat-icon>
+                                    <span>Shortlist</span>
+                                </button>
+                                <mat-divider></mat-divider>
+                                <button mat-menu-item>
+                                    <mat-icon>delete</mat-icon>
+                                    <span>Delete</span>
+                                </button>
+                                <button mat-menu-item>
+                                    <mat-icon>note_add</mat-icon>
+                                    <span>Notes</span>
+                                </button>
+                            </mat-menu>
+                            <mat-icon>remove_red_eye</mat-icon>
+                            <mat-icon>person_add_disabled</mat-icon>
+                            <mat-icon>share</mat-icon>
+                            <mat-icon>get_app</mat-icon>
+                            <mat-icon class="thumb">thumb_down_alt</mat-icon>
+                            <mat-icon class="import-export"> import_export</mat-icon>
+                        </div>
+                    </div>
+                    <div class="mb-2 d-flex d-lg-none align-items-center justify-content-center">
+                        <a class="blue" (click)="see = !see">{{ see ? 'See less': 'See More' }}
+                            <mat-icon style="height:16px; width:16px; font-size:16px; margin-top:10px;">
+                                {{see ? 'expand_less' : 'expand_more'}}</mat-icon>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row mt-4">
-            <div class="col-5 user_data candidate-list-left" style="border-right:1px solid #E0DFDF;">
-                <div class="row">
-                    <div class="col-1">
-                        <mat-checkbox class="example-margin"></mat-checkbox>
-                    </div>
-                    <div class="col-2 px-0 my-auto">
-                        <div class="row">
-                            <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
-                        </div>
-                        <div class="row">
-                            <p class="profile_match mx-auto">85% Matching</p>
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <small class="user-details">ID UD-1205</small>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <h2 class="me-2 my-auto">Daniel Jones</h2>
-                                            </div>
-                                            <div class="col-2 my-auto ratings d-flex">
-                                                <mat-icon class="me-2">star</mat-icon>
-                                                <div>4.3</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-auto">
-                                    <div class="col">
-                                        <span class="user-details">Jr. UI UX Designer at Infosys</span>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col d-flex">
-                                        <div>
-                                            <img src="../assets/media/robot.svg" alt="" class="me-1">
-                                        </div>
-                                        <div>
-                                            <span class="my-auto light">Engaged By</span> Erika via Whatsapp
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col d-flex">
-                                        <div class="me-3 my-auto d-flex">
-                                            <div class="my-auto">
-                                                <mat-icon class="user-mat-icon">phone</mat-icon>
-                                            </div>
-                                            <span class="">(+91) 9857 857 125</span>
-                                        </div>
-                                        <div class="me-3">
-                                            <mat-icon class="user-mat-icon">email</mat-icon>
-                                            <span class="my-auto">danielj@gmail.com</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <mat-icon class="user-mat-icon">location_on</mat-icon>
-                                        <span class="light">Current Location</span> Delhi <img
-                                            src="../assets/media/blue-dots.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col" fxLayout="row">
-                                        <div>
-                                            <i class="fa fa-plus icon-plus my-auto"></i>
-                                        </div>
-                                        <div class="vector-phone mx-2">
-                                            <img src="../assets/media/vector.png" alt="vector">
-                                            <span class="mx-2">Phone</span>|
-                                        </div>
-                                        <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
-                                                alt="vector"><span class="mx-2">Whitelist</span><i
-                                                class="fa fa-times-circle-o icon-cross"></i>
-                                        </div>
-                                        <div>
-                                            <span class="vector-number my-auto">+1</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-7 user_data">
-                <div class="row">
-                    <div class="col-11 candidate-details">
-                        <div>
-                            <button mat-stroked-button class="screening mt-2 mt-lg-0 me-2">Screening</button>
-                            <button mat-stroked-button class="not-applicable mt-2 mt-lg-0 me-2">Consent Not
-                                applicant</button>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/skills.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">skillset <img src="../assets/media/blue-dots.png" alt=""></span>
-                                <br />Excel • FCC • PPM • Apt • Spring • Ring • Spin • root cause analysis • TPM • Rust
-
-                            </div>
-
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/experience.png" alt="">
-                            </div>
-                            <div class="me-5">
-                                <span class="light">Experiance</span> 3 years 10 month
-                            </div>
-                            <div class="me-2">
-                                <img src="../assets/media/designation.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Designation</span> IT
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/salary.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Salary</span> 50K $Annually
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/notice-period.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Notice Period</span> 30Days
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <p><span class="light">Added by</span> You via Monster Inc.<span class="light">on</span> 14
-                                Sep 2021</p>
-                            <p><span class="light">Resume was last edited by</span> candidate <span
-                                    class="light">on</span> 30 Oct 2017</p>
-                        </div>
-                    </div>
-                    <div class="col-1 pe-0 candidate-list-right">
-                        <mat-icon>more_vert</mat-icon>
-                        <mat-icon>remove_red_eye</mat-icon>
-                        <mat-icon>person_add</mat-icon>
-                        <mat-icon>share</mat-icon>
-                        <mat-icon> vertical_align_bottom</mat-icon>
-                        <mat-icon class="thumb">thumb_down_alt</mat-icon>
-                        <mat-icon class="import-export"> import_export</mat-icon>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-5 user_data candidate-list-left" style="border-right:1px solid #E0DFDF;">
-                <div class="row">
-                    <div class="col-1">
-                        <mat-checkbox class="example-margin"></mat-checkbox>
-                    </div>
-                    <div class="col-2 px-0 my-auto">
-                        <div class="row">
-                            <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
-                        </div>
-                        <div class="row">
-                            <p class="profile_match mx-auto">85% Matching</p>
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <small class="user-details">ID UD-1205</small>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <h2 class="me-2 my-auto">Daniel Jones</h2>
-                                            </div>
-                                            <div class="col-2 my-auto ratings d-flex">
-                                                <mat-icon class="me-2">star</mat-icon>
-                                                <div>4.3</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-auto">
-                                    <div class="col">
-                                        <span class="user-details">Jr. UI UX Designer at Infosys</span>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col d-flex">
-                                        <div>
-                                            <img src="../assets/media/robot.svg" alt="" class="me-1">
-                                        </div>
-                                        <div>
-                                            <span class="my-auto light">Engaged By</span> Erika via Whatsapp
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col d-flex">
-                                        <div class="me-3 my-auto d-flex">
-                                            <div class="my-auto">
-                                                <mat-icon class="user-mat-icon">phone</mat-icon>
-                                            </div>
-                                            <span class="">(+91) 9857 857 125</span>
-                                        </div>
-                                        <div class="me-3">
-                                            <mat-icon class="user-mat-icon">email</mat-icon>
-                                            <span class="my-auto">danielj@gmail.com</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <mat-icon class="user-mat-icon">location_on</mat-icon>
-                                        <span class="light">Current Location</span> Delhi <img
-                                            src="../assets/media/blue-dots.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col" fxLayout="row">
-                                        <div>
-                                            <i class="fa fa-plus icon-plus my-auto"></i>
-                                        </div>
-                                        <div class="vector-phone mx-2">
-                                            <img src="../assets/media/vector.png" alt="vector">
-                                            <span class="mx-2">Phone</span>|
-                                        </div>
-                                        <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
-                                                alt="vector"><span class="mx-2">Whitelist</span><i
-                                                class="fa fa-times-circle-o icon-cross"></i>
-                                        </div>
-                                        <div>
-                                            <span class="vector-number my-auto">+1</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-7 user_data">
-                <div class="row">
-                    <div class="col-11 candidate-details">
-                        <div>
-                            <button mat-stroked-button class="screening mt-2 mt-lg-0 me-2">Screening</button>
-                            <button mat-stroked-button class="not-applicable mt-2 mt-lg-0 me-2">Consent Not
-                                applicant</button>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/skills.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">skillset <img src="../assets/media/blue-dots.png" alt=""></span>
-                                <br />Excel • FCC • PPM • Apt • Spring • Ring • Spin • root cause analysis • TPM • Rust
-
-                            </div>
-
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/experience.png" alt="">
-                            </div>
-                            <div class="me-5">
-                                <span class="light">Experiance</span> 3 years 10 month
-                            </div>
-                            <div class="me-2">
-                                <img src="../assets/media/designation.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Designation</span> IT
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/salary.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Salary</span> 50K $Annually
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/notice-period.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Notice Period</span> 30Days
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <p><span class="light">Added by</span> You via Monster Inc.<span class="light">on</span> 14
-                                Sep 2021</p>
-                            <p><span class="light">Resume was last edited by</span> candidate <span
-                                    class="light">on</span> 30 Oct 2017</p>
-                        </div>
-                    </div>
-                    <div class="col-1 pe-0 candidate-list-right">
-                        <mat-icon>more_vert</mat-icon>
-                        <mat-icon>remove_red_eye</mat-icon>
-                        <mat-icon>person_add</mat-icon>
-                        <mat-icon>share</mat-icon>
-                        <mat-icon> vertical_align_bottom</mat-icon>
-                        <mat-icon class="thumb">thumb_down_alt</mat-icon>
-                        <mat-icon class="import-export"> import_export</mat-icon>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-5 user_data candidate-list-left" style="border-right:1px solid #E0DFDF;">
-                <div class="row">
-                    <div class="col-1">
-                        <mat-checkbox class="example-margin"></mat-checkbox>
-                    </div>
-                    <div class="col-2 px-0 my-auto">
-                        <div class="row">
-                            <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
-                        </div>
-                        <div class="row">
-                            <p class="profile_match mx-auto">85% Matching</p>
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <small class="user-details">ID UD-1205</small>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <h2 class="me-2 my-auto">Daniel Jones</h2>
-                                            </div>
-                                            <div class="col-2 my-auto ratings d-flex">
-                                                <mat-icon class="me-2">star</mat-icon>
-                                                <div>4.3</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-auto">
-                                    <div class="col">
-                                        <span class="user-details">Jr. UI UX Designer at Infosys</span>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col d-flex">
-                                        <div>
-                                            <img src="../assets/media/robot.svg" alt="" class="me-1">
-                                        </div>
-                                        <div>
-                                            <span class="my-auto light">Engaged By</span> Erika via Whatsapp
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col d-flex">
-                                        <div class="me-3 my-auto d-flex">
-                                            <div class="my-auto">
-                                                <mat-icon class="user-mat-icon">phone</mat-icon>
-                                            </div>
-                                            <span class="">(+91) 9857 857 125</span>
-                                        </div>
-                                        <div class="me-3">
-                                            <mat-icon class="user-mat-icon">email</mat-icon>
-                                            <span class="my-auto">danielj@gmail.com</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <mat-icon class="user-mat-icon">location_on</mat-icon>
-                                        <span class="light">Current Location</span> Delhi <img
-                                            src="../assets/media/blue-dots.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col" fxLayout="row">
-                                        <div>
-                                            <i class="fa fa-plus icon-plus my-auto"></i>
-                                        </div>
-                                        <div class="vector-phone mx-2">
-                                            <img src="../assets/media/vector.png" alt="vector">
-                                            <span class="mx-2">Phone</span>|
-                                        </div>
-                                        <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
-                                                alt="vector"><span class="mx-2">Whitelist</span><i
-                                                class="fa fa-times-circle-o icon-cross"></i>
-                                        </div>
-                                        <div>
-                                            <span class="vector-number my-auto">+1</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-7 user_data">
-                <div class="row">
-                    <div class="col-11 candidate-details">
-                        <div>
-                            <button mat-stroked-button class="screening mt-2 mt-lg-0 me-2">Screening</button>
-                            <button mat-stroked-button class="not-applicable mt-2 mt-lg-0 me-2">Consent Not
-                                applicant</button>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/skills.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">skillset <img src="../assets/media/blue-dots.png" alt=""></span>
-                                <br />Excel • FCC • PPM • Apt • Spring • Ring • Spin • root cause analysis • TPM • Rust
-
-                            </div>
-
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/experience.png" alt="">
-                            </div>
-                            <div class="me-5">
-                                <span class="light">Experiance</span> 3 years 10 month
-                            </div>
-                            <div class="me-2">
-                                <img src="../assets/media/designation.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Designation</span> IT
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/salary.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Salary</span> 50K $Annually
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/notice-period.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Notice Period</span> 30Days
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <p><span class="light">Added by</span> You via Monster Inc.<span class="light">on</span> 14
-                                Sep 2021</p>
-                            <p><span class="light">Resume was last edited by</span> candidate <span
-                                    class="light">on</span> 30 Oct 2017</p>
-                        </div>
-                    </div>
-                    <div class="col-1 pe-0 candidate-list-right">
-                        <mat-icon>more_vert</mat-icon>
-                        <mat-icon>remove_red_eye</mat-icon>
-                        <mat-icon>person_add</mat-icon>
-                        <mat-icon>share</mat-icon>
-                        <mat-icon> vertical_align_bottom</mat-icon>
-                        <mat-icon class="thumb">thumb_down_alt</mat-icon>
-                        <mat-icon class="import-export"> import_export</mat-icon>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-5 user_data candidate-list-left" style="border-right:1px solid #E0DFDF;">
-                <div class="row">
-                    <div class="col-1">
-                        <mat-checkbox class="example-margin"></mat-checkbox>
-                    </div>
-                    <div class="col-2 px-0 my-auto">
-                        <div class="row">
-                            <img src="../assets/media/avatar.png" alt="" class="avatar img-fluid">
-                        </div>
-                        <div class="row">
-                            <p class="profile_match mx-auto">85% Matching</p>
-                        </div>
-                    </div>
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <small class="user-details">ID UD-1205</small>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <h2 class="me-2 my-auto">Daniel Jones</h2>
-                                            </div>
-                                            <div class="col-2 my-auto ratings d-flex">
-                                                <mat-icon class="me-2">star</mat-icon>
-                                                <div>4.3</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-auto">
-                                    <div class="col">
-                                        <span class="user-details">Jr. UI UX Designer at Infosys</span>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col d-flex">
-                                        <div>
-                                            <img src="../assets/media/robot.svg" alt="" class="me-1">
-                                        </div>
-                                        <div>
-                                            <span class="my-auto light">Engaged By</span> Erika via Whatsapp
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col d-flex">
-                                        <div class="me-3 my-auto d-flex">
-                                            <div class="my-auto">
-                                                <mat-icon class="user-mat-icon">phone</mat-icon>
-                                            </div>
-                                            <span class="">(+91) 9857 857 125</span>
-                                        </div>
-                                        <div class="me-3">
-                                            <mat-icon class="user-mat-icon">email</mat-icon>
-                                            <span class="my-auto">danielj@gmail.com</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <mat-icon class="user-mat-icon">location_on</mat-icon>
-                                        <span class="light">Current Location</span> Delhi <img
-                                            src="../assets/media/blue-dots.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col" fxLayout="row">
-                                        <div>
-                                            <i class="fa fa-plus icon-plus my-auto"></i>
-                                        </div>
-                                        <div class="vector-phone mx-2">
-                                            <img src="../assets/media/vector.png" alt="vector">
-                                            <span class="mx-2">Phone</span>|
-                                        </div>
-                                        <div class="vector-phone mx-2"><img src="../assets/media/vector.png"
-                                                alt="vector"><span class="mx-2">Whitelist</span><i
-                                                class="fa fa-times-circle-o icon-cross"></i>
-                                        </div>
-                                        <div>
-                                            <span class="vector-number my-auto">+1</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-7 user_data">
-                <div class="row">
-                    <div class="col-11 candidate-details">
-                        <div>
-                            <button mat-stroked-button class="screening mt-2 mt-lg-0 me-2">Screening</button>
-                            <button mat-stroked-button class="not-applicable mt-2 mt-lg-0 me-2">Consent Not
-                                applicant</button>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/skills.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">skillset <img src="../assets/media/blue-dots.png" alt=""></span>
-                                <br />Excel • FCC • PPM • Apt • Spring • Ring • Spin • root cause analysis • TPM • Rust
-
-                            </div>
-
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/experience.png" alt="">
-                            </div>
-                            <div class="me-5">
-                                <span class="light">Experiance</span> 3 years 10 month
-                            </div>
-                            <div class="me-2">
-                                <img src="../assets/media/designation.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Designation</span> IT
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/salary.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Salary</span> 50K $Annually
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <div class="me-2">
-                                <img src="../assets/media/notice-period.png" alt="">
-                            </div>
-                            <div>
-                                <span class="light">Notice Period</span> 30Days
-                            </div>
-                        </div>
-                        <div class="d-flex mt-1">
-                            <p><span class="light">Added by</span> You via Monster Inc.<span class="light">on</span> 14
-                                Sep 2021</p>
-                            <p><span class="light">Resume was last edited by</span> candidate <span
-                                    class="light">on</span> 30 Oct 2017</p>
-                        </div>
-                    </div>
-                    <div class="col-1 pe-0 candidate-list-right">
-                        <mat-icon>more_vert</mat-icon>
-                        <mat-icon>remove_red_eye</mat-icon>
-                        <mat-icon>person_add</mat-icon>
-                        <mat-icon>share</mat-icon>
-                        <mat-icon> vertical_align_bottom</mat-icon>
-                        <mat-icon class="thumb">thumb_down_alt</mat-icon>
-                        <mat-icon class="import-export"> import_export</mat-icon>
-                    </div>
-                </div>
-            </div>
+        <div>
+            <app-add-new-candidate-btn></app-add-new-candidate-btn>
         </div>
     </div>
 </div>

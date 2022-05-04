@@ -1,5 +1,5 @@
 .candidate {
-    margin-left: 90px;
+    margin-left: 60px;
     overflow: hidden !important;
 }
 
@@ -11,18 +11,27 @@
     border: 1px solid #EBEAED;
 }
 
-.add-candidate {
-    border: 1px solid #1F47F5;
-    color: white;
-    height: auto;
-    background: #1F47F5;
-}
+
 
 .export-btn {
     border: 1px solid #EBEAED;
     color: #1F47F5;
     height: auto;
     background: white;
+}
+
+.all-dropdown {
+    width: 20%;
+    background: white;
+    border:1px solid  #E5E5E5;
+    border-radius: 4px;
+    color: #84818A;
+    margin-right: 10px;
+}
+.all-dropdown.mat-icon.arrow {
+    color: #84818A;
+    height: 13px;
+    width: 13px;
 }
 
 ::ng-deep {
@@ -65,11 +74,27 @@
         box-sizing: border-box;
         // width: 30%!important;
     }
+    .all-dropdown .mat-select-placeholder,
+    .all-dropdown .mat-select-arrow {
+        color: #84818A!important;
+    }
+
+    .all-dropdown .mat-select-arrow {
+        opacity: 0;
+    }
 }
 
 // End Adjust accordingly to keep placeholder/input text/Select text vertically centered
 @media(max-width:700px) {
-    .main-page {
-        margin-left: auto;
+    .candidate {
+        margin-left: 10px;
+    }
+    .all-dropdown {
+        width: 30%;
+        background: white;
+        border:1px solid  #E5E5E5;
+        border-radius: 4px;
+        color: #84818A;
+        margin-right: 10px;
     }
 }

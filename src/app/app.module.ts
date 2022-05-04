@@ -50,6 +50,9 @@ import { TablePaginationComponent } from './evaluation/table-pagination/table-pa
 import { CandidateComponent } from './candidate/candidate.component';
 import { AdvancedFilterComponent } from './candidate/advanced-filter/advanced-filter.component';
 import { CandidateListComponent } from './candidate/candidate-list/candidate-list.component';
+// import { AddCandidateComponent } from './add-candidate/add-candidate.component';
+import { AddNewCandidateBtnComponent } from './candidate/add-new-candidate-btn/add-new-candidate-btn.component';
+import { AddCandidateDialogSheetComponent } from './candidate/add-new-candidate-btn/add-candidate-dialog-sheet/add-candidate-dialog-sheet.component';
 // import { CustomDatepickerComponent } from './add-candidate/add-education/custom-datepicker/custom-datepicker.component';
 
 @NgModule({
@@ -92,6 +95,9 @@ import { CandidateListComponent } from './candidate/candidate-list/candidate-lis
     CandidateComponent,
     AdvancedFilterComponent,
     CandidateListComponent,
+    // AddCandidateComponent,
+    AddNewCandidateBtnComponent,
+    AddCandidateDialogSheetComponent,
     // CustomDatepickerComponent
   ],
   imports: [

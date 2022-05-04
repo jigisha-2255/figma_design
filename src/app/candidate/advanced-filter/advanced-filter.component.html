@@ -98,11 +98,11 @@
         <div class="row my-2">
             <div class="col">
                 <div class="justify-between">
-                    <div class="my-auto">
-                        <mat-icon>donut_large</mat-icon>
+                    <div class="align-center">
+                        <mat-icon class="me-2">donut_large</mat-icon>
                         <span class="keyword">Area</span>
                     </div>
-                    <div class="my-auto">
+                    <div>
                         <button mat-button [matMenuTriggerFor]="menu" class="dropdown-right">
                             <span class="contains">Kilometer <mat-icon>keyboard_arrow_down</mat-icon></span>
                         </button>
@@ -175,10 +175,16 @@
             <div class="col">
                 <div class="justify-between my-2">
                     <div class="blue">Work remotely </div>
+                    <div>
+                        <mat-slide-toggle checked></mat-slide-toggle>
+                    </div>
                 </div>
                 <div class="justify-between my-2">
                     <div class="blue">
                         Show recommended candidate only
+                    </div>
+                    <div>
+                        <mat-slide-toggle></mat-slide-toggle>
                     </div>
                 </div>
             </div>
