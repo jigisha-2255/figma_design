@@ -11,7 +11,9 @@
     border: 1px solid #EBEAED;
 }
 
-
+.search-icon{
+    color:#B6B4BA;
+}
 
 .export-btn {
     border: 1px solid #EBEAED;
@@ -23,7 +25,7 @@
 .all-dropdown {
     width: 20%;
     background: white;
-    border:1px solid  #E5E5E5;
+    // border:1px solid  #E5E5E5;
     border-radius: 4px;
     color: #84818A;
     margin-right: 10px;
@@ -33,7 +35,22 @@
     height: 13px;
     width: 13px;
 }
-
+input.mat-input-element {
+    margin-top:-10px;
+    // font-weight: 600;
+    color:#84818A;
+}
+.filter-list {
+    border: 1px solid #E3E1E5;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mat-icon{
+        color:#504F54;
+    }
+}
 ::ng-deep {
     .mat-form-field-appearance-outline .mat-form-field-wrapper {
         margin: 0 !important;
@@ -87,12 +104,14 @@
 // End Adjust accordingly to keep placeholder/input text/Select text vertically centered
 @media(max-width:700px) {
     .candidate {
-        margin-left: 10px;
+        margin-left:auto;
     }
+}
+@media(max-width:1200px){
     .all-dropdown {
-        width: 30%;
+        width: 100%;
         background: white;
-        border:1px solid  #E5E5E5;
+        // border:1px solid  #E5E5E5;
         border-radius: 4px;
         color: #84818A;
         margin-right: 10px;

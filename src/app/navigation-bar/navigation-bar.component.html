@@ -39,7 +39,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="content">
-    <mat-toolbar color="primary">
+    <mat-toolbar color="primary" class="px-0">
       <div>
         <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
           *ngIf="isHandset$ | async">
@@ -63,7 +63,7 @@
         </mat-menu>
       </div>
       <div style="display:flex; justify-content: center; align-items: center;" class="d-lg-none">
-        <button mat-button [matMenuTriggerFor]="menu">
+        <button class="flex-end "mat-button [matMenuTriggerFor]="menu">
           <button mat-mini-fab aria-label="Example icon button with a plus one icon" style="background:#1F47F5;">
             MB
           </button>

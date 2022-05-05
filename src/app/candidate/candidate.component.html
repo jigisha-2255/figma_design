@@ -1,4 +1,4 @@
-<div class="candidate p-lg-3 margin-top">
+<div class="candidate p-2 p-lg-3 margin-top">
     <div class="row">
         <div class="col my-4 d-flex justify-content-between d-none d-lg-flex">
             <div class="mat-display-1">Candidates</div>
@@ -19,33 +19,64 @@
                 <app-add-new-candidate-btn></app-add-new-candidate-btn>
             </div>
         </div>
-        <div class="d-lg-none">
+        <div class="col-12 d-lg-none">
             <mat-form-field class="w-100" appearance="outline">
                 <input type="text" matInput placeholder="Search">
                 <mat-icon class="search-icon" matSuffix>search</mat-icon>
             </mat-form-field>
-            <div class="d-flex my-2">
-                <mat-form-field appearance="outline" class="all-dropdown">
-                    <mat-select placeholder="All">
-                        <mat-option value="option1">All</mat-option>
-                        <mat-option value="option2">None</mat-option>
-                    </mat-select>
-                    <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
-                </mat-form-field>
-                <mat-form-field appearance="outline" class="all-dropdown">
-                    <mat-select placeholder="SortBy">
-                        <mat-option value="option1">Asc</mat-option>
-                        <mat-option value="option2">Desc</mat-option>
-                    </mat-select>
-                    <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
-                </mat-form-field>
-                <span class="ms-2 filter-list" (click)="toggleShow()">
-                    <mat-icon >filter_list</mat-icon>
-                </span>
+            <!-- <div class="row my-2">
+                <div class="col">
+                    <mat-form-field appearance="outline" class="all-dropdown">
+                        <mat-select placeholder="All">
+                            <mat-option value="option1">All</mat-option>
+                            <mat-option value="option2">None</mat-option>
+                        </mat-select>
+                        <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <mat-form-field appearance="outline" class="all-dropdown">
+                        <mat-select placeholder="SortBy">
+                            <mat-option value="option1">Asc</mat-option>
+                            <mat-option value="option2">Desc</mat-option>
+                        </mat-select>
+                        <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
+                    </mat-form-field>
+                </div>
+                <div class="col">
+                    <span class="ms-2 filter-list" (click)="toggleShow()">
+                        <mat-icon >filter_list</mat-icon>
+                    </span>
+                </div>
+            </div> -->
+            <div class="row my-2">
+                <div class="col-4">
+                    <mat-form-field appearance="outline" class="all-dropdown">
+                        <mat-select placeholder="All">
+                            <mat-option value="option1">All</mat-option>
+                            <mat-option value="option2">None</mat-option>
+                        </mat-select>
+                        <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
+                    </mat-form-field> 
+                </div>
+                <div class="col-6">
+                    <mat-form-field appearance="outline" class="all-dropdown">
+                        <mat-select placeholder="SortBy">
+                            <mat-option value="option1">Asc</mat-option>
+                            <mat-option value="option2">Desc</mat-option>
+                        </mat-select>
+                        <mat-icon matSuffix class="arrow">keyboard_arrow_down</mat-icon>
+                    </mat-form-field>
+                </div>
+                <div class="col-2">
+                    <span class="filter-list" (click)="toggleShow()">
+                        <mat-icon >filter_list</mat-icon>
+                    </span>
+                </div>
             </div>
         </div>
-       
         <hr class="hr">
+        <div class="col">
         <div class="row">
             <div class="col-12 col-lg-2">
                 <app-advanced-filter *ngIf="isShown"></app-advanced-filter>
@@ -56,3 +87,5 @@
             </div>
         </div>
     </div>
+    </div>
+</div>
