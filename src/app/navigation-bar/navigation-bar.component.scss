@@ -21,6 +21,10 @@
   z-index: 1;
 }
 
+.active-list-item {
+  // background-color: #3F51B5 !important; /* Note: You could also use a custom theme */
+}
+
 ::ng-deep .mat-list-base .mat-list-item .mat-list-item-content,
 .mat-list-base .mat-list-option .mat-list-item-content {
   display: flex;
